@@ -6,9 +6,6 @@ import { theme } from './theme';
 
 export const config = /*#__PURE__*/configuration({
   theme,
-  dest: {
-    namespace: '/codedoc-docs'
-  },
   page: {
     title: {
       base: 'Codedoc'
