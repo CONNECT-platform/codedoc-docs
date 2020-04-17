@@ -64,6 +64,11 @@
       "name": "postNavSearch",
       "filename": "/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js",
       "hash": "TSSDyJUJ5MF8CxXdZhxqIA=="
+    },
+    {
+      "name": "reloadOnChange",
+      "filename": "/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/serve/reload.js",
+      "hash": "fg7vwA34cw3s10rfUFspDw=="
     }
   ],
   "components": [
@@ -76,6 +81,11 @@
       "name": "ToCPrevNext",
       "filename": "/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js",
       "hash": "tmDdRWd0xpfOENb7rlKAfw=="
+    },
+    {
+      "name": "CollapseControl",
+      "filename": "/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js",
+      "hash": "TxHjw9gHSkdNX9vinqYn2g=="
     },
     {
       "name": "GithubSearch",
@@ -101,11 +111,6 @@
       "name": "ConfigTransport",
       "filename": "/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js",
       "hash": "kOEOgUy490TE5nYuJ/+gEw=="
-    },
-    {
-      "name": "CollapseControl",
-      "filename": "/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js",
-      "hash": "TxHjw9gHSkdNX9vinqYn2g=="
     }
   ],
   "renderer": {

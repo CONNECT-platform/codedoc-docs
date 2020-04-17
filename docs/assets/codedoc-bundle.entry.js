@@ -12,24 +12,25 @@ import { loadDeferredIFrames } from '/Users/eugeneghanizadeh/Documents/projects/
 import { smoothLoading } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/transport/smooth-loading.js';smoothLoading();
 import { tocHighlight } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toc-highlight.js';tocHighlight();
 import { postNavSearch } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js';postNavSearch();
+import { reloadOnChange } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/serve/reload.js';reloadOnChange();
 import { TabSelector } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js';
 import { ToCPrevNext } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
+import { CollapseControl } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
 import { GithubSearch } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/github/search.js';
 import { ToCToggle } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toggle/index.js';
 import { GitterToggle } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/gitter/index.js';
 import { DarkModeSwitch } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/darkmode/index.js';
 import { ConfigTransport } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js';
-import { CollapseControl } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
 
 const components = {
   'q/OlneeeNbqE10H4+gfcyg==': TabSelector,
   'tmDdRWd0xpfOENb7rlKAfw==': ToCPrevNext,
+  'TxHjw9gHSkdNX9vinqYn2g==': CollapseControl,
   'LHmYIa9jw4kvzRnNkYTJKQ==': GithubSearch,
   'kdwuOXCVFRaPyYvyVmSwxg==': ToCToggle,
   'y6MP3o1UOA8zQt/vvLsHLg==': GitterToggle,
   '3OzLnzyMnxpSqF4FFxawkw==': DarkModeSwitch,
-  'kOEOgUy490TE5nYuJ/+gEw==': ConfigTransport,
-  'TxHjw9gHSkdNX9vinqYn2g==': CollapseControl
+  'kOEOgUy490TE5nYuJ/+gEw==': ConfigTransport
 };
 
 const renderer = getRenderer();

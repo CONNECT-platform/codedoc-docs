@@ -1,8 +1,22 @@
 [Home](/)
-[Markdown Cheat Sheet](/docs/cheat-sheet)
-[Code Features](/docs/code-features)
+[Overview](/docs/overview)
+[Theme](/docs/theme)
 
-<br><br>
+> :Collapse label=Markdown
+>
+> [Buttons](/docs/markdown/buttons)
+> [Tabs](/docs/markdown/tabs)
+> [Collapse](/docs/markdown/collapse)
+> [Dark/Light](/docs/markdown/)
+> [ToC Navigation](/docs/toc-nav)
 
-To add links to your other documents, simply
-modify contents of `docs/md/_toc.md`.
+> :Collapse label=Code Features
+>
+> [Highlights](/docs/code/highlights)
+> [Hints](/docs/code/hints)
+> [References](/docs/code/refs)
+> [Top-Bar](/docs/code/wmbar)
+
+[Images & Assets](/docs/assets)
+[Configuration](/docs/config)
+

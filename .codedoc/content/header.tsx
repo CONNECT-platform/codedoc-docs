@@ -11,6 +11,8 @@ export function Header(config: CodedocConfig, renderer: any) {
           user={config.misc.github.user}
           large={config.misc.github.large === true}
           count={config.misc.github.count !== false}
+          colorLight={'Dark'}
+          colorDark={'Dark'}
           standardIcon={config.misc.github.standardIcon !== false}/>
         <br/><br/>
       </fragment>
