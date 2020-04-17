@@ -12,7 +12,6 @@ import { loadDeferredIFrames } from '/Users/eugeneghanizadeh/Documents/projects/
 import { smoothLoading } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/transport/smooth-loading.js';smoothLoading();
 import { tocHighlight } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toc-highlight.js';tocHighlight();
 import { postNavSearch } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js';postNavSearch();
-import { reloadOnChange } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/serve/reload.js';reloadOnChange();
 import { TabSelector } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js';
 import { ToCPrevNext } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 import { CollapseControl } from '/Users/eugeneghanizadeh/Documents/projects/connect/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
