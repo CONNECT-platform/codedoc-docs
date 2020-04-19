@@ -864,11 +864,9 @@ body.dark a {
 }
 .container {
   margin: 0 auto;
-  padding: 32px;
+  padding: 96px 16px;
   max-width: 768px;
   transition: opacity .15s;
-  padding-top: 96px;
-  margin-bottom: 64px;
 }
 hr {
   border: none;

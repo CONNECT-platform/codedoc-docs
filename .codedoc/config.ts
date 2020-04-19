@@ -15,7 +15,7 @@ export const config = /*#__PURE__*/configuration({
   misc: {
     github: {
       user: 'CONNECT-platform',
-      repo: 'codedoc-docs',
+      repo: 'codedoc',
     },
     gitter: {
       room: 'connectv/codedoc'

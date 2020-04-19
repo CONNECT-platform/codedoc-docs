@@ -7,9 +7,8 @@
 > >
 > > ![header](https://raw.githubusercontent.com/CONNECT-platform/codedoc/master/repo-banner-dark.svg?sanitize=true)
 
-**CODEDOC** is an open-source tool that helps you with creating beautiful modern software documentation 
-that you can easily host on GitHub Pages (or on similar hosting services), by creating a JAMStack app 
-from your markdown files.
+**CODEDOC** is an open-source tool that helps you with creating beautiful and modern software documentation.
+It creates a JAMStack app from your markdown files that you can easily deploy on services such as GitHub Pages.
 
 ```bash
 npm i -g @codedoc/cli             # --> click on each line to copy it
@@ -19,8 +18,8 @@ npm i -g @codedoc/cli             # --> click on each line to copy it
 
 # Usage
 
-Assume you have this repo on github named `my-project` and want to write documentations for it
-using codedoc. First of all, clone your repo to a folder, and make sure you have codedoc cli installed as well.
+Assume you have a repo on github named `my-project` and want to write documentations for it
+using codedoc. Install the codedoc cli, clone your repo locally, then:
 
 ```bash
 cd my-project                # --> go to your project folder
@@ -32,8 +31,8 @@ Open a browser on the URL the CLI tool tells you (e.g. `localhost:3000/my-projec
 see the docs boilerplate.
 
 Your markdown files by default are located at `docs/md/`, for example the main page you see
-will be from `/docs/md/index.md`. The table of contents will also by default be on `docs/md/_toc.md`.
-Modify them and see the changes in realtime locally.
+will be from `docs/md/index.md`. The table of contents will also by default be on `docs/md/_toc.md`.
+Modify them and see the changes in realtime.
 
 <br>
 
@@ -90,7 +89,12 @@ to see how exactly these documentations were created using codedoc.
 > > >
 > > > > :Button label=Google!, url=https://stackblitz.com
 
-<br><br>
+<br>
+
+> :Buttons
+> > :Button label=Learn More, url=/docs/markdown/overview
+
+<br>
 
 ## Enhanced Code Snippets
 
@@ -125,7 +129,12 @@ to see how exactly these documentations were created using codedoc.
 > > > :Buttons
 > > > > :CopyButton
 
-<br><br>
+<br>
+
+> :Buttons
+> > :Button label=Learn More, url=/docs/code/overview
+
+<br>
 
 ## Customizability
 
@@ -155,10 +164,9 @@ opening the search functionality.
 
 ## Integrated Dark Mode
 
-Its 2020, and I consider dark-mode a human-right! Codedoc by default
+Its 2020, and dark-mode should be considered a universal right! Codedoc
 supports dark-mode on all your docs. Device settings is used by default,
-while allowing your readers to manually override this via the toggle
-on the footer.
+while allowing your readers to manually override this.
 
 <br>
 

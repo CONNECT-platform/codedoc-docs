@@ -1,9 +1,15 @@
 # Overview
 
-**CODEDOC** works by searching through all markdown files in a given source folder,
-creating an HTML file for each markdown file, and putting them in some destination folder, preserving
-their relative path to each other. The default source folder is `docs/md`, and the default
-destination folder is the root of your project.
+A **CODEDOC** project consists of three main components:
+- Some markdown files, which codedoc will search through and transform into HTML files. Codedoc expects to find
+these _source_ or _input_ or _entry_ files by default in `docs/md`, though you can reconfigure that.
+
+- The resulting HTML files, alongside the bundle and styles required by those HTML files. Codedoc creates a stand-alone
+HTML file for each of your _entry_ markdown files (except those who are exempt by [exclusion rules](#exclusions)) 
+and puts them in some destination folder, which is by default the root folder of your project, maintaining
+their relative paths to each other. You can reconfigure this destination folder as well.
+
+- Codedoc configruations, scripts and components. These are **ALWAYS** located in `.codedoc/` folder of your project.
 
 Assume you have the following markdown files:
 
@@ -13,7 +19,12 @@ docs/md/some-folder/spec.md
 docs/md/index.md
 ```
 
-Then the following HTML files will be created:
+Then, in order to build them, you need to run
+```bash
+codedoc build
+```
+
+And following HTML files will be generated:
 
 ```bash
 some-folder/overview.html
@@ -21,8 +32,7 @@ some-folder/spec.html
 index.html
 ```
 
-You can change the default source and destination folders by modifying `.codedoc/config.ts`
-like the following:
+You can change the default source and destination folders by modifying `.codedoc/config.ts`:
 
 ```ts | .codedoc/config.ts
 import { configuration } from '@codedoc/core';
@@ -66,8 +76,8 @@ dist/html/index.html
 
 > <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
 >
-> The default configuration for destination files is optimized for publishing to GitHub Pages,
-> so modify it when you know what you are doing when you want to deploy to GitHub Pages
+> The default configuration for destination files is optimized for publishing to GitHub Pages.
+> If you do intend to publish to GitHub Pages, modify them only if you know what you are doing.
 
 ## Exclusions
 
@@ -158,11 +168,19 @@ You can also use the `Collapse` component for organizing long tables of contents
 > [Spec](/some-folder/spec)
 ```
 
-If you want to have the nice _Previous_ and _Next_ buttons in your page
-automatically deduced using the ToC, you can also simply use this markdown:
+If you want to have the nice _Previous_ and _Next_ buttons in a page
+automatically deduced using the ToC, you need to use the `ToCPrevNext` component:
 
-```md
-> :ToCPrevNext
+```md | docs/md/some-folder/overview.md
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+mollit anim id est laborum.
+
+/*!*/ > :ToCPrevNext
 ```
 
 ---
