@@ -51,6 +51,7 @@ export interface ContentTheme {
   primary: string;              // --> CSS color string, primary color (for buttons, links, etc)
   primaryContrast: string;      // --> CSS color string, text color on primary background (e.g. buttons)
   border: string;               // --> CSS color string, border colors
+  code: string                  // --> CSS color string, in-text code color
 }
 ```
 
