@@ -1,7 +1,8 @@
 
-import { configuration } from '@codedoc/core';
+import { configuration, DefaultMarkdownCustomComponents } from '@codedoc/core';
 
 import { theme } from './theme';
+import { Card } from './components/card';
 
 
 export const config = /*#__PURE__*/configuration({
@@ -21,4 +22,10 @@ export const config = /*#__PURE__*/configuration({
       room: 'connectv/codedoc'
     }
   },
+  markdown: {
+    customComponents: {
+      ...DefaultMarkdownCustomComponents,
+      Card,
+    }
+  }
 });

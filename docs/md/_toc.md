@@ -9,8 +9,8 @@
 > [Buttons](/docs/markdown/buttons)
 > [Tabs](/docs/markdown/tabs)
 > [Collapse](/docs/markdown/collapse)
-> [Dark/Light](/docs/markdown/)
-> [ToC Navigation](/docs/toc-nav)
+> [ToC Navigation](/docs/markdown/toc-nav)
+> [Custom Components](/docs/markdown/custom-components)
 
 > :Collapse label=Code Features
 >
