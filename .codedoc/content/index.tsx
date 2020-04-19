@@ -23,7 +23,7 @@ export function content(_content: HTMLElement, toc: HTMLElement, renderer: Rende
             <ToC search={
                   config.misc?.github ? 
                   <GithubSearch$
-                    repo={config.misc.github.repo} 
+                    repo="codedoc-docs" 
                     user={config.misc.github.user}
                     root={config.src.base}
                     pick={config.src.pick.source}

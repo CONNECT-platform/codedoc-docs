@@ -7,7 +7,7 @@ export function Header(config: CodedocConfig, renderer: any) {
     <_Header>{config.misc?.github ?
       <fragment>
         <GithubButton action={config.misc.github.action || 'Star'}
-          repo={config.misc.github.repo}
+          repo="codedoc"
           user={config.misc.github.user}
           large={config.misc.github.large === true}
           count={config.misc.github.count !== false}
