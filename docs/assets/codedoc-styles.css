@@ -945,3 +945,17 @@ iframe {
   background: white;
   border-radius: 3px;
 }
+code {
+  color: #616161;
+  padding: 4px;
+  font-size: .85em;
+  background: #eeeeee;
+  border-radius: 3px;
+}
+body.dark-mode-animate code {
+  transition: color .3s, background .3s;
+}
+body.dark code {
+  color: #e0e0e0;
+  background: #282828;
+}
