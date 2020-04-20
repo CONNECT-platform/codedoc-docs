@@ -20,7 +20,7 @@
 > [References](/docs/code/refs)
 > [Top-Bar](/docs/code/wmbar)
 
-[Images & Assets](/docs/assets)
+[Images & Assets](/docs/assets-and-images)
 
 > :Collapse label=Configuration
 >
