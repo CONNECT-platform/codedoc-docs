@@ -99,7 +99,7 @@ export const config = configuration({
 
 /*!*/  page: {                                // @see /docs/config/page
     title: {                             // --> configuration for page title
-      base: 'My Project',                // --> the base term of page title
+      base: 'Codedoc Sample Page',       // --> the base term of page title
       connector: ' | ',                  // --> the connector of different parts of the page title
       extractor: (content, config) =>    // --> the page-specific title extractor
         guessTitle(
@@ -113,9 +113,9 @@ export const config = configuration({
       subject: undefined                 // --> the subject meta tag for each page
       description: undefined             // --> description meta tag for each page
       keywords: [],                      // --> a list of SEO keywords
-      themeColor: undefined,             // --> the browser bar color of your docs
+      themeColor: '#212121',             // --> the browser bar color of your docs
       appleMobileWebStatusBarStyle:      // --> same as above, but for iOS Safari
-        undefined
+        'black-translucent'
     },
     fonts: {                             // --> font settings
       text: {                            // --> font used for texts
@@ -139,8 +139,9 @@ export const config = configuration({
           'Material Icons Outlined'
       }
     },
-    scripts: [],                         // --> a list of URLs for external scripts to load
-    stylesheets: [],                     // --> a list of URLs for external stylesheets to load
+    scripts: [],                         // --> a list of script elements to be added to the head
+    stylesheets: [],                     // --> a list of stylesheet elements to be added to the head
+    post: [],                            // --> a list of functions for post-processing each generated HTML page
   },
 
 /*!*/  markdown: {                            // @see /docs/config/markdown

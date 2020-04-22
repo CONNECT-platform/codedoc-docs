@@ -42,28 +42,14 @@ You can have icons on your buttons:
 >
 > > :Button label=NPM, url=https://npmjs.org
 
-The icons are read from the configured icon-font, which is by default
-[Material Icons](https://material.io/resources/icons/?style=baseline). You can override
-this in `.codedoc/config.ts` as well:
+<br>
 
-```ts | .codedoc/config.ts
-// ...
-export const config = /*#__PURE__*/configuration({
-  // ...
-  page: {
-    // ...
-    fonts: {
-      // ...
-      icon: {
-        name: 'My-Icon-Font',                                      // --> name of the icon-font
-        url: 'https://some-where-on-the.cloud/fonts/my-icon-font', // --> the URL of the icon-font
-      }
-    },
-    // ...
-  },
-  // ...
-});
-```
+The icons are read from the configured icon-font, which is by default
+[Material Icons](https://material.io/resources/icons/). You can override
+this in `.codedoc/config.ts` as well.
+
+> :Buttons
+> > :Button label=Learn More about Custom Icon Font, url=/docs/config/page#icon-font
 
 ---
 

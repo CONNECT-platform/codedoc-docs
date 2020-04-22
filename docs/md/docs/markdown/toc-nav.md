@@ -35,26 +35,11 @@ You can customize the icons of the buttons via `prev-icon` and `next-icon` attri
 
 The icons are read from the configured icon-font, which is by default
 [Material Icons](https://material.io/resources/icons/?style=baseline). You can override
-this in `.codedoc/config.ts`:
+this in `.codedoc/config.ts` as well.
 
-```ts | .codedoc/config.ts
-// ...
-export const config = /*#__PURE__*/configuration({
-  // ...
-  page: {
-    // ...
-    fonts: {
-      // ...
-      icon: {
-        name: 'My-Icon-Font',                                      // --> name of the icon-font
-        url: 'https://some-where-on-the.cloud/fonts/my-icon-font', // --> the URL of the icon-font
-      }
-    },
-    // ...
-  },
-  // ...
-});
-```
+> :Buttons
+> > :Button label=Learn More about Custom Icon Font, url=/docs/config/page#icon-font
+
 
 <br><br>
 

@@ -113,31 +113,10 @@ You can uses the `icon` property to include an icon the title of a tab as well:
 > > voluptas nulla pariatur?
 
 By default, the [Material Icons](https://material.io/resources/icons/?style=baseline) icon-font
-is used. You can of-course override that and use your own custom icon-font:
+is used. You can of-course override that and use your own custom icon-font via `.codedoc/config.ts`.
 
-```ts | .codedoc/config.ts
-// ...
-export const config = /*#__PURE__*/configuration({
-  // ...
-  page: {
-    // ...
-    fonts: {
-      // ...
-      icon: {
-        name: 'My-Icon-Font',                                      // --> name of the icon-font
-        url: 'https://some-where-on-the.cloud/fonts/my-icon-font', // --> the URL of the icon-font
-      }
-    },
-    // ...
-  },
-  // ...
-});
-```
-
-<br>
-
-> Read [this entry](/docs/markdown/buttons#copy-button) for more details on some considerations
-> of using custom icon-fonts.
+> :Buttons
+> > :Button label=Learn More about Custom Icon Font, url=/docs/config/page#icon-font
 
 ---
 

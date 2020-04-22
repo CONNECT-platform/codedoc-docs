@@ -1,11 +1,11 @@
 > :DarkLight
 > > :InLight
 > >
-> > ![header](https://raw.githubusercontent.com/CONNECT-platform/codedoc/master/repo-banner.svg?sanitize=true)
+> > ![header](/repo-banner.svg)
 >
 > > :InDark
 > >
-> > ![header](https://raw.githubusercontent.com/CONNECT-platform/codedoc/master/repo-banner-dark.svg?sanitize=true)
+> > ![header](/repo-banner-dark.svg)
 
 **CODEDOC** is an open-source tool that helps you with creating beautiful and modern software documentation.
 It creates a JAMStack app from your markdown files that you can easily deploy on services such as GitHub Pages.
