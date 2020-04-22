@@ -21,7 +21,7 @@ export function Header(config: CodedocConfig, renderer: any) {
         .header-copyright-notice {
           font-size: 10px;
           display: block;
-          opacity: .5;
+          opacity: .25;
           transition: opacity .3s !important;
           text-decoration: none !important;
         }
