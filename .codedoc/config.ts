@@ -1,5 +1,5 @@
 
-import { configuration, 
+import { configuration,
         DefaultMarkdownCustomComponents 
 } from '@codedoc/core';
 

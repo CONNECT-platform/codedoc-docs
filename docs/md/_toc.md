@@ -32,3 +32,9 @@
 > [Markdown Config](/docs/config/markdown)
 > [Miscellaneous](/docs/config/misc)
 
+> :Collapse label=Customization
+>
+> [Customization Overview](/docs/customization/overview)
+> [Recipe: ToC State](/docs/customization/recipe_toc_state)
+> [Recipe: Hamburger Menu](/docs/customization/recipe_hamburger_on_top)
+> [Recipe: Custom Search API](/docs/customization/recipe_custom_search_api)
