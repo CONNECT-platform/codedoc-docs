@@ -67,6 +67,9 @@ export function LeftHeaderPadding(                                      // --> t
 }
 ```
 
+> :Buttons
+> > :CopyButton
+
 The styling used for the components are based on [`@connectv/jss-theme`](https://github.com/CONNECT-platform/connective-jss-theme)
 which is in turn based on [JSS](https://cssinjs.org/).
 
@@ -122,6 +125,9 @@ export function content(_content: HTMLElement, toc: HTMLElement, renderer: Rende
 }
 ```
 
+> :Buttons
+> > :CopyButton
+
 <br>
 
 ## Step 3: Remove from Footer
@@ -167,6 +173,9 @@ export function Footer(
   </div>
 }
 ```
+> :Buttons
+> > :CopyButton
+
 <br>
 
 > Notice how for this recipe we adopted the [original code of **CODEDOC**'s own footer](https://github.com/CONNECT-platform/codedoc/blob/master/src/components/page/footer/index.tsx).

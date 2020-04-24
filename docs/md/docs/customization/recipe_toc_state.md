@@ -45,6 +45,8 @@ export function content(_content: HTMLElement, toc: HTMLElement, renderer: Rende
   )
 }
 ```
+> :Buttons
+> > :CopyButton
 
 The `default` property on `ToC` component affects the default state of the `ToC` on desktop, and can be either
 `"open"` or `"close"`.
