@@ -168,6 +168,26 @@ You can also use the `Collapse` component for organizing long tables of contents
 > [Spec](/some-folder/spec)
 ```
 
+Or use `Collapse` in a nested manner:
+
+```md | docs/_toc.md
+[Home](/)
+
+> :Collapse label=Stuff
+>
+> [Overview](/some-folder/overview)
+> > :Collapse label=Spec
+> > [Spec Overview](/some-folder/spec/overview)
+> > [Spec of This](/some-folder/spec/this)
+```
+
+<br>
+
+> :Buttons
+> > :Button label=Read More about Collapse, url=/docs/markdown/collapse
+
+<br>
+
 If you want to have the nice _Previous_ and _Next_ buttons in a page
 automatically deduced using the ToC, you need to use the `ToCPrevNext` component:
 

@@ -115,6 +115,36 @@ and want to categorize them nicely. For example, this is the actual code of the 
 
 ---
 
+## Table of Contents
+
+The main intention behind the `Collapse` component was to allow organization of links in table of contents 
+(the side-bar):
+
+```md | docs/_toc.md
+[Home](/)
+
+> :Collapse label=Stuff
+>
+> [Overview](/some-folder/overview)
+> [Spec](/some-folder/spec)
+```
+
+As mentioned above, `Collapse` can be used in a nested manner, so you can have your desired
+level of depth in your ToC:
+
+```md | docs/_toc.md
+[Home](/)
+
+> :Collapse label=Stuff
+>
+> [Overview](/some-folder/overview)
+> > :Collapse label=Spec
+> > [Spec Overview](/some-folder/spec/overview)
+> > [Spec of This](/some-folder/spec/this)
+```
+
+---
+
 ## Default State
 
 You can set the default state of a `Collapse` by setting its `default` property.
