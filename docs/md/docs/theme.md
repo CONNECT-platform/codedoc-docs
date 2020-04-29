@@ -143,6 +143,11 @@ export interface CodeTheme {
   attrValue: string;                 // --> CSS color string, color of tag attribute values (HTML/JSX/TSX)
   plainText: string;                 // --> CSS color string, color of plain text in HTML/JSX/TSX tags
   script: string;                    // --> CSS color string, color of script tokens
+  placeholder: string;               // --> CSS color string, color of sass placeholders
+  selector: string;                  // --> CSS color string, color of css selectors
+  property: string;                  // --> CSS color string, color of css properties
+  important: string;                 // --> CSS color string, color of `important!` keyword
+  cssfunc: string;                   // --> CSS color string, color of css functions
 }
 ```
 
