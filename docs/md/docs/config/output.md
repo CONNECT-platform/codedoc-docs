@@ -229,4 +229,9 @@ jobs:
           FOLDER: dist
 ```
 
+>:Buttons
+> >:CopyButton
+
+You can also checkout [this repository](https://github.com/LukasForst/blog) for an example of how to do this setup.
+
 > :ToCPrevNext
