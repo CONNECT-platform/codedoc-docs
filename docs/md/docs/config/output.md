@@ -147,4 +147,86 @@ to modify your links, anchors, image sources, etc. For example, if you start wit
 without a custom domain, you simply set the `namespace` property to `/<repo>`, and then when
 you get a custom domain for your docs, update the `namespace` to `''` (or remove it from config).
 
+---
+
+## Build Files on Git
+
+For deploying to GitHub Pages, you would need the generated HTML, CSS, and Javascript files
+to also be put on your repository. This can be incovenient, since random stubs are used
+across these files which means they will be different everytime you change them, which can make it
+difficult to track changes to your markdown files.
+
+One solution is to put build files on `gh-pages` branch and setup GitHub Pages to use that branch.
+A more complete solution, as proposed by [Lukas Frost](https://github.com/LukasForst), is to put
+all build files in a folder that is ignored by git, and then use GitHub Actions to automatically
+push the contents of that file to `gh-pages`.
+
+To achieve this, do the following steps:
+
+**STEP 1**: Configure GitHub Pages to `gh-pages`.
+
+**STEP 2**: Configure codedoc to put its build files in `dist` folder, via `.codedoc/config.ts`:
+
+```ts | .codedoc/config.ts
+import { configuration } from '@codedoc/core';
+
+// ...
+
+
+export const config = /*#__PURE__*/configuration({
+  // ...
+  dest: {
+    // ...
+    html: 'dist',
+    assets: 'dist',
+  },
+  // ...
+});
+```
+
+<br>
+
+**STEP 3**: Add `dist` folder to `.gitignore`:
+
+```bash | .gitignore
+# ...
+
+dist
+
+# ...
+```
+
+If you use GitHub's default gitignore for Node, it includes this config.
+
+**STEP 4**: Add GitHub Actions pipeline to `.github/workflows/deploy-to-gh-pages.yml`:
+
+```yml | .github/workflows/deploy-to-gh-pages.yml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          # install .codedoc dependencies
+          (cd .codedoc && npm install)
+          # install codedoc
+          npm install @codedoc/cli
+          # build repo
+          (PATH=$(npm bin):$PATH && codedoc build)
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+```
+
 > :ToCPrevNext

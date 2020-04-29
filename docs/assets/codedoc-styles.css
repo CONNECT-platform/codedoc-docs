@@ -107,6 +107,9 @@ body.dark .darklight-0-0-1>.dark {
   .code-0-0-2.scss .token.function, .code-0-0-2.css .token.function, .code-0-0-2.sass .token.function {
     color: #9aceff;
   }
+  .code-0-0-2 .token.key {
+    color: #f6d186;
+  }
 @media (prefers-color-scheme: dark) {
   body:not(.dark-mode-animate) .code-0-0-2 {
     color: #e0e0e0;
@@ -176,6 +179,9 @@ body.dark .darklight-0-0-1>.dark {
   body:not(.dark-mode-animate) .code-0-0-2.scss .token.function, body:not(.dark-mode-animate) .code-0-0-2.css .token.function, body:not(.dark-mode-animate) .code-0-0-2.sass .token.function {
     color: #9aceff;
   }
+  body:not(.dark-mode-animate) .code-0-0-2 .token.key {
+    color: #f6d186;
+  }
 }
   body.dark .code-0-0-2 {
     color: #e0e0e0;
@@ -244,6 +250,9 @@ body.dark .darklight-0-0-1>.dark {
   }
   body.dark .code-0-0-2.scss .token.function, body.dark .code-0-0-2.css .token.function, body.dark .code-0-0-2.sass .token.function {
     color: #9aceff;
+  }
+  body.dark .code-0-0-2 .token.key {
+    color: #f6d186;
   }
   .lineCounter-0-0-3 {
     left: 0;
