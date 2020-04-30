@@ -130,6 +130,42 @@ Since components can have markdown content, this means you can use child compone
 
 <br>
 
+### Formula
+
+> :Tabs
+> > :Tab title=Markdown
+> > ```md
+> > > :Formula
+> > >
+> > > \text{let}`\;`s \equiv G \cancel{\vdash} s
+> > >
+> > > G \vdash s \implies G \vdash (G \cancel{\vdash} s) \implies \bot
+> > >
+> > > G \vdash \neg{s} \implies G \vdash (G \vdash s) \implies G \vdash s \implies \bot
+> > >
+> > > \implies \neg(G \vdash s) \land \neg(G \vdash \neg{s}) `\\`
+> > > \implies G `\;`\text{is not complete.}
+> > ```
+>
+> > :Tab title=How it Looks
+> > > :Formula
+> > >
+> > > \text{let}`\;`s \equiv G \cancel{\vdash} s
+> > >
+> > > G \vdash s \implies G \vdash (G \cancel{\vdash} s) \implies \bot
+> > >
+> > > G \vdash \neg{s} \implies G \vdash (G \vdash s) \implies G \vdash s \implies \bot
+> > >
+> > > \implies \neg(G \vdash s) \land \neg(G \vdash \neg{s}) `\\`
+> > > \implies G `\;`\text{is not complete.}
+
+<br>
+
+> :Buttons
+> > :Button label=Learn More, url=/docs/markdown/formula
+
+<br>
+
 ### Dark/Light Content
 
 ```md
@@ -157,7 +193,6 @@ Since components can have markdown content, this means you can use child compone
 > > ![Day Image](https://cdn.osxdaily.com/wp-content/uploads/2018/06/macos-mojave-day-wallpaper-r-610x343.jpg)
 
 <br>
-
 
 ### Watermark
 

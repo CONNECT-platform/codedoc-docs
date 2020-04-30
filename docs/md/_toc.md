@@ -10,6 +10,7 @@
 > [Tabs](/docs/markdown/tabs)
 > [Collapse](/docs/markdown/collapse)
 > [ToC Navigation](/docs/markdown/toc-nav)
+> [Formula](/docs/markdown/formula)
 > [Custom Components](/docs/markdown/custom-components)
 
 > :Collapse label=Code Features

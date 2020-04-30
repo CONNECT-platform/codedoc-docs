@@ -2,6 +2,7 @@
 import { configuration,
         DefaultMarkdownCustomComponents 
 } from '@codedoc/core';
+import { enableFormula } from '@codedoc/core/components';
 
 import { theme } from './theme';
 import { Card } from './components/card';
@@ -34,7 +35,8 @@ export const config = /*#__PURE__*/configuration({
         'beautiful',
         'modern',
       ]
-    }
+    },
+    post: [enableFormula]
   },
   misc: {
     github: {
