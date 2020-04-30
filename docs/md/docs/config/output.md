@@ -232,6 +232,43 @@ jobs:
 >:Buttons
 > >:CopyButton
 
-You can also checkout [this repository](https://github.com/LukasForst/blog) for an example of how to do this setup.
+<br>
+
+> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+>
+> If you are using images and figures in your docs, you should also configure your build
+> pipeline to copy them to `dist/` folder before pushing to `gh-pages` branch as well:
+>
+> ```yml | .github/workflows/deploy-to-gh-pages.yml
+> name: 'Deploy to Github Pages'
+> on:
+>   push:
+>     branches:
+>       master
+> jobs:
+>   build-and-deploy:
+>   # ...
+>   steps:
+>     # ...
+>
+>     - name: Build
+>       run: |
+>       # install .codedoc dependencies
+>       (cd .codedoc && npm install)
+>       # install codedoc
+>       npm install @codedoc/cli
+>       # build repo
+>       (PATH=$(npm bin):$PATH && codedoc build)
+>/*!*/      # copy assets
+>/*!*/      cp repo-banner.svg dist/
+>/*!*/      cp repo-banner-dark.svg dist/
+>/*!*/      cp favicon.ico dist/
+>
+>     # ...
+> ```
+
+
+You can also checkout [this repository](https://github.com/LukasForst/blog) by LukasFrost or
+[the repo of these docs](https://github.com/CONNECT-platform/codedoc-docs) for examples of how to do this setup.
 
 > :ToCPrevNext
