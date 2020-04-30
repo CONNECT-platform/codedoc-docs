@@ -9,6 +9,10 @@ import { Card } from './components/card';
 
 export const config = /*#__PURE__*/configuration({
   theme,
+  dest: {
+    html: 'dist',
+    assets: 'dist',
+  },
   page: {
     title: {
       base: 'Codedoc',
