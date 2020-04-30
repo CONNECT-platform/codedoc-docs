@@ -255,4 +255,76 @@ As a result, codedoc comes with a host of features on code snippets to enhance l
 > :Buttons
 > > :Button label=Learn More, url=/docs/code/wmbar
 
+---
+
+## Unsupported Languages
+
+**CODEDOC** uses [Prism](https://prismjs.com) for syntax highlighting. In case a language
+is not supported by Prism, you will get an error indicating that the language for the snippet
+is not recognized.
+
+> :Buttons
+> > :Button label=Languages Supported by Prism, url=https://prismjs.com/#supported-languages
+
+In most cases, this is actually a typo in the markdown, and the error helps you track it down
+and fix it. However, in rare cases you are actually writing a snippet in a new language which
+is not yet supported by Prism. In such a case, you can overcome the error in two ways:
+
+- You can remove the language marker:
+
+> :Tabs
+> > :Tab title=Markdown
+> > ````
+> > ```
+> > Ok some unknown syntax
+> > ```
+> > ````
+>
+> > :Tab title=How it Looks
+> > ```
+> > Ok some unknown syntax
+> > ```
+
+<br>
+
+> :Tabs
+> > :Tab title=Markdown
+> > ````
+> > ``` | whatever.xyz
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > ```
+> > ````
+>
+> > :Tab title=How it Looks
+> > ``` | whatever.xyz
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > ```
+
+<br>
+
+- **OR**, you can use the `--safe-highlight` flag:
+
+> :Tabs
+> > :Tab title=Markdown
+> > ````
+> > ``` xyz | whatever.xyz | --safe-highlight
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > ```
+> > ````
+>
+> > :Tab title=How it Looks
+> > ``` xyz | whatever.xyz | --safe-highlight
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > Ok some unknown syntax
+> > ```
+
+
+
 > :ToCPrevNext
