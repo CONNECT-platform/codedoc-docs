@@ -1058,7 +1058,65 @@ body.dark code {
   body.dark .card-0-0-16 strong {
     color: #ffffff;
   }
-  .watermark-0-0-17 {
+  .formula-0-0-17 {
+    color: #757575;
+    padding: 16px;
+    background: #eeeeee;
+    border-radius: 3px;
+  }
+  body.dark .formula-0-0-17 {
+    color: #cacaca;
+    background: #282828;
+  }
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) .formula-0-0-17 {
+    color: #cacaca;
+    background: #282828;
+  }
+}
+  body.dark-mode-animate .formula-0-0-17 {
+    transition: background .3s, color .3s;
+  }
+  .formula-0-0-17.big {
+    font-size: 32px;
+  }
+  .formula-0-0-17.center > div {
+    text-align: center;
+  }
+  .line-0-0-18 {
+    cursor: pointer;
+    padding: 16px 32px;
+    overflow: auto;
+    position: relative;
+    border-radius: 3px;
+  }
+  .line-0-0-18:hover {
+    background: #e8e8e8;
+  }
+  .line-0-0-18 .counter {
+    top: 0;
+    left: 8px;
+    width: 32px;
+    bottom: 0;
+    display: flex;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 10px;
+    text-align: left;
+    align-items: center;
+  }
+  body.dark .line-0-0-18:hover {
+    background: #323232;
+  }
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) .line-0-0-18:hover {
+    background: #323232;
+  }
+}
+  body.dark-mode-animate .line-0-0-18:hover {
+    transition: background .3s;
+  }
+  .watermark-0-0-19 {
     color: #424242;
     cursor: pointer;
     display: inline-block;
@@ -1067,37 +1125,37 @@ body.dark code {
     transition: opacity .15s;
     text-decoration: none !important;
   }
-  body.dark-mode-animate .watermark-0-0-17 {
+  body.dark-mode-animate .watermark-0-0-19 {
     transition: opacity .15s, color .3s;
   }
-  .watermark-0-0-17:hover {
+  .watermark-0-0-19:hover {
     opacity: 1;
     text-decoration: none;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .watermark-0-0-17 {
+  body:not(.dark-mode-animate) .watermark-0-0-19 {
     color: #eeeeee;
   }
 }
-  body.dark .watermark-0-0-17 {
+  body.dark .watermark-0-0-19 {
     color: #eeeeee;
   }
-  .watermark-0-0-17 svg {
+  .watermark-0-0-19 svg {
     width: 2.8rem;
     display: block;
     margin-top: .25rem;
   }
-  .watermark-0-0-17 svg g {
+  .watermark-0-0-19 svg g {
     fill: #424242;
   }
-  body.dark-mode-animate .watermark-0-0-17 svg g {
+  body.dark-mode-animate .watermark-0-0-19 svg g {
     transition: fill .3s;
   }
-  body.dark .watermark-0-0-17 svg g {
+  body.dark .watermark-0-0-19 svg g {
     fill: #eeeeee;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .watermark-0-0-17 svg g {
+  body:not(.dark-mode-animate) .watermark-0-0-19 svg g {
     fill: #eeeeee;
   }
 }
