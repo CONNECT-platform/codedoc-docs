@@ -266,6 +266,14 @@ jobs:
 >
 >     # ...
 > ```
+> Additionally, to have the assets available on your local testing
+> as well, you should copy them to `dist/` folder too:
+>
+> ```bash
+> cp repo-banner.svg dist/
+> cp repo-banner-dark.svg dist/
+> cp favicon.ico dist/
+> ```
 
 
 You can also checkout [this repository](https://github.com/LukasForst/blog) by LukasFrost or
