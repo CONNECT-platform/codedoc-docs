@@ -50,6 +50,22 @@ If your project folder is version controlled by `git` with the remote
 set to a GitHub repository, it will automatically configure GitHub integrations
 for you as well.
 
+<br>
+
+### Cloning Existing Projects
+
+When you clone an existing project that is already setup (i.e. has a `.codedoc` folder in
+its repo), you still need to install local dependencies (in `.codedoc/node_modules`) to
+be able to build/serve the files locally.
+
+For this purpose, you can use `codedoc install` command:
+
+```bash
+git clone <my-awsome-project>.git            # --> so my-awseome-project is an already setup
+cd my-awesome-project                        # --> lets go inside
+codedoc install                              # --> and install local dependencies.
+```
+
 ---
 
 ## Development

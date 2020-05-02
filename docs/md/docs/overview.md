@@ -286,4 +286,28 @@ export function Footer(_: any, renderer: any) {
 }
 ```
 
+---
+
+# Collaboration
+
+If you want to work on a **CODEDOC** project collaboratively, i.e. you want to work
+with other people on the markdown files / codedoc configs., it is recommended to
+not submit changes in build files (the generated HTML files) to the repo, and instead 
+only submit changes to markdown files / codedoc configs, then build the files
+per merge and push the changes subsequently.
+
+In situations where the build files need to be present on repo, for example when deploying
+to GitHub Pages, this can be challenging, since you would need to manually remove build files
+from each commit.
+
+However, you can simply isolate the build files to an ignored folder and then create a branch
+that only contains the contents of that folder. For example, you can put all of your build
+files in `dist/` folder (which is ignored by git), have your `gh-pages` branch
+only contain contents of `dist/` folder, and configure your GitHub Pages to use the `gh-pages`
+branch of your repo. [You can even automate this process using GitHub Actions](/docs/config/output#build-files-on-git),
+so that you don't need to manually build and push after each iteration.
+
+> :Buttons
+> > :Button label=See How In Detail, url=/docs/config/output#build-files-on-git
+
 > :ToCPrevNext

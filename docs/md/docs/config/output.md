@@ -159,7 +159,7 @@ difficult to track changes to your markdown files.
 One solution is to put build files on `gh-pages` branch and setup GitHub Pages to use that branch.
 A more complete solution, as proposed by [Lukas Frost](https://github.com/LukasForst), is to put
 all build files in a folder that is ignored by git, and then use GitHub Actions to automatically
-push the contents of that file to `gh-pages`.
+push the contents of that folder to `gh-pages`.
 
 To achieve this, do the following steps:
 
