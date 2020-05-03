@@ -59,7 +59,7 @@ And keep using the URLs as if you do not have a namespace:
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">info</span> **UNDER THE HOOD**
+> [info](:Icon) **UNDER THE HOOD**
 >
 > Codedoc basically automatically incorporates the project namespace into any link,
 > image source, script source or anchor element whose URL starts with `/`.
@@ -101,9 +101,7 @@ host configuration accordingly for the deployed version to work properly as well
 so that `funny.png` would be available on `/funny.png` when you do not have a namespace
 and `/my-project/funny.png` when you do).
 
-> <span class="icon-font" style="vertical-align: sub; color: red">warning</span>
-> <span style="color:red">**ATTENTION**</span>
-> <span class="icon-font" style="vertical-align: sub; color: red">warning</span>
+> [warning](:Icon) **ATTENTION** [warning](:Icon)
 >
 > A custom setup as described above **DOES NOT WORK** on GitHub pages since there is no
 > way to configure GitHub Pages to serve your static assets on a different URL. _Only use this

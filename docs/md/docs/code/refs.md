@@ -70,7 +70,7 @@ titles:
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+> [warning](:Icon) **WARNING**
 >
 > Only the simple `[title](link)` syntax is supported. So the following would not work:
 > - `[title](link "tooltip")`

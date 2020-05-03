@@ -72,7 +72,7 @@ dist/html/whatever/stuff.html
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+> [warning](:Icon) **WARNING**
 >
 > The default configuration for output files is optimized for publishing to GitHub Pages.
 > If you do intend to publish to GitHub Pages, modify them only if you know what you are doing.
@@ -234,7 +234,7 @@ jobs:
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+> [warning](:Icon) **WARNING**
 >
 > If you are using images and figures in your docs, you should also configure your build
 > pipeline to copy them to `dist/` folder before pushing to `gh-pages` branch as well:

@@ -180,4 +180,93 @@ Now we can use our card component in our markdown files:
 > > :Buttons
 > > > :Button label=Wiki, url=https://en.wikipedia.org/wiki/Jackson_Pollock
 
+---
+
+# Custom Inline Components
+
+You can similarly create your own inline custom components:
+
+> :Tabs
+> > :Tab title=Component Code
+> > ```tsx | .codedoc/components/tag/index.tsx
+> > import { ThemedComponentThis } from '@connectv/jss-theme';
+> > import { RendererLike } from '@connectv/html';
+> > import { CodedocTheme } from '@codedoc/core';
+> > 
+> > import { TagStyle } from './style';            // @see tab:Style Code
+> > 
+> > 
+> > export function Tag(
+> >   this: ThemedComponentThis<CodedocTheme>,
+> >   _: any,
+> >   renderer: RendererLike<any, any>,
+> >   content: any
+> > ) {
+> >   const classes = this.theme.classes(TagStyle);
+> >   return <span class={classes.tag}># {content}</span>
+> > }
+> > ```
+>
+> > :Tab title=Style Code
+> > ```ts | .codedoc/components/tag/style.ts
+> > import { themedStyle } from '@connectv/jss-theme';
+> > import { CodedocTheme } from '@codedoc/core';
+> > 
+> > 
+> > export const TagStyle = themedStyle<CodedocTheme>(theme => ({
+> >   tag: {
+> >     display: 'inline-flex',
+> >     alignItems: 'center',
+> >     verticalAlign: 'middle',
+> >     height: 16,
+> >     borderRadius: 16,
+> >     padding: 8,
+> >     background: theme.light.primary,
+> >     color: theme.light.primaryContrast,
+> > 
+> >     'body.dark &': { 
+> >       background: theme.dark.primary,
+> >       color: theme.dark.primaryContrast,
+> >     },
+> >   }
+> > }));
+> > ```
+>
+> > :Tab title=Config
+> > ```ts | .codedoc/config.ts
+> > import { 
+> >   configuration, 
+> > /*!*/  DefaultMarkdownCustomInlineComponents         // --> make sure to import the default components
+> > } from '@codedoc/core';
+> > 
+> > import { theme } from './theme';
+> > /*!*/import { Tag } from './components/tag';         // --> import the tag component itself
+> > 
+> > 
+> > export const config = /*#__PURE__*/configuration({
+> >   // ...
+> > /*!*/  markdown: {                                   // --> update markdown config
+> > /*!*/    customInlineComponents: {                   // --> add to custom components
+> > /*!*/      ...DefaultMarkdownInlineCustomComponents, // --> make sure to add default markdown components. otherwise the default components will not work!
+> > /*!*/      Tag,                                      // --> add our own tag component
+> > /*!*/    }
+> > /*!*/  },
+> >   // ...
+> > });
+> > ```
+
+Which can be used like this:
+
+> :Tabs
+> > :Tab title=Markdown
+> > ```md | docs/md/some-doc.md
+> > <!-- ... -->
+> > And now lets use [Some Tags](:Tag) inside our text.
+> > <!-- ... -->
+> > ```
+>
+> > :Tab title=How it Looks
+> >
+> > And now lets use [Some Tags](:Tag) inside our text.
+
 > :ToCPrevNext

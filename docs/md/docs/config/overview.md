@@ -54,7 +54,9 @@ The following are all of the configurable properties, set to their default value
 ```ts | .codedoc/config.ts
 import { configuration,
          DefaultMarkdownCustomComponents,
+         DefaultMarkdownCustomInlineComponents,
          DefaultToCMarkdownCustomComponents,
+         DefaultToCMarkdownCustomInlineComponents,
        } from '@codedoc/core';
 import { guessTitle } from '@codedoc/core/transport';
 
@@ -149,11 +151,15 @@ export const config = configuration({
     Heading,
     customComponents:                    // --> custom components available in markdown
       DefaultMarkdownCustomComponents,   // --> default components provided by codedoc
+    customInlineComponents:              // --> custom inline components available in markdown
+      DefaultMarkdownCustomInlineComponents
   },
 /*!*/  tocMarkdown: {                         // @see /docs/config/markdown
     Heading: ToCHeading,
     customComponents:                    // --> custom components available while parsing toc markdown
       DefaultToCMarkdownCustomComponents,// --> default toc components provided by codedoc
+    customInlineComponents:              // --> custom inline components available in toc markdown
+      DefaultToCMarkdownCustomInlineComponents
   },
 });
 ```

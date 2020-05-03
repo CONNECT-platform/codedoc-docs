@@ -54,7 +54,7 @@ export const config = /*#__PURE__*/configuration({
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+> [warning](:Icon) **WARNING**
 >
 > Make sure you include `DefaultConfig.bundle.init` in your initialization scripts array,
 > as otherwise the initialization script for many of **CODEDOC** features will not be loaded

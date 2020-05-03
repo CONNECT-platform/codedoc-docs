@@ -27,9 +27,24 @@ The `Formula` component allows for using math formulas in your docs:
 > > > \end{cases}
 > > > ```
 
+You can also use `Formula` inline component:
+
+> :Tabs
+> > :Tab title=Markdown
+> > ```md
+> > So lets talk about [\frak{L}_{SM}](:Formula), or lets just do it in 
+> > the last example of the page.
+> > ```
+>
+> > :Tab title=How it Looks
+> >
+> > So lets talk about [\frak{L}_{SM}](:Formula), or lets just do it in 
+> > the last example of the page.
+
+
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">error</span> **IMPORTANT**
+> [error](:Icon) **IMPORTANT**
 >
 > **YOU MUST ENABLE FORMULAS** via config to be able to use them. Read [the following section](#enabling-formulas)
 > to find out how to enable Formulas.

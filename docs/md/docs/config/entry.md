@@ -96,7 +96,7 @@ export const config = /*#__PURE__*/configuration({
 With this configuration, `docs/md/_toc.md` will be loaded and parsed for
 filling in the ToC.
 
-> <span class="icon-font" style="vertical-align: sub">touch_app</span> **NOTE**
+> [touch_app](:Icon) **NOTE**
 >
 > If you customize the address of the table of contents file, make sure to either
 > name it to something that starts with `_`, or is located in a folder whose name starts with an `_`,

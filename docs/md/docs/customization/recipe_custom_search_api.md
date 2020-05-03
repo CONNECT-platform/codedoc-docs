@@ -67,7 +67,7 @@ export const MySearch$ = /*#__PURE__*/transport(MySearch);
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">touch_app</span> **NOTE**
+> [touch_app](:Icon) **NOTE**
 >
 > Note that although we have defined the component `MySearch`, we also export
 > a _transported_ version of it named `MySearch$`. The reason is `MySearch` is a client-side component,

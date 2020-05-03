@@ -354,7 +354,7 @@ export const config = /*#__PURE__*/configuration({
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">touch_app</span> **NOTE**
+> [touch_app](:Icon) **NOTE**
 >
 > Note that members of `scripts` and `stylesheets` must be `HTMLElement`s. This is why
 > we used TSX, alongside the TSX renderer of [CONNECTIVE SDH](https://github.com/CONNECT-platform/connective-sdh)

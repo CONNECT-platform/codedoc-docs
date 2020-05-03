@@ -1,11 +1,13 @@
 
 import { configuration,
-        DefaultMarkdownCustomComponents 
+        DefaultMarkdownCustomComponents,
+        DefaultMarkdownCustomInlineComponents,
 } from '@codedoc/core';
 import { enableFormula } from '@codedoc/core/components';
 
 import { theme } from './theme';
 import { Card } from './components/card';
+import { Tag } from './components/tag';
 
 
 export const config = /*#__PURE__*/configuration({
@@ -51,6 +53,10 @@ export const config = /*#__PURE__*/configuration({
     customComponents: {
       ...DefaultMarkdownCustomComponents,
       Card,
+    },
+    customInlineComponents: {
+      ...DefaultMarkdownCustomInlineComponents,
+      Tag,
     }
   }
 });

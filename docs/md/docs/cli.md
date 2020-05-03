@@ -112,7 +112,7 @@ export const config = /*#__PURE__*/configuration({
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">touch_app</span> **PROJECT NAMESPACE**
+> [touch_app](:Icon) **PROJECT NAMESPACE**
 >
 > Project namespace is basically for situations where your docs are not going
 > be served at the root URL of your domain. For example, when you are publishing
@@ -140,7 +140,7 @@ codedoc build             # --> Or simply `codedoc b`.
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+> [warning](:Icon) **WARNING**
 >
 > Running `codedoc serve` would overwrite your built files, so make sure to always
 > run `codedoc build` before publishing your docs.

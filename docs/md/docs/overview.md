@@ -74,7 +74,7 @@ dist/html/index.html
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+> [warning](:Icon) **WARNING**
 >
 > The default configuration for destination files is optimized for publishing to GitHub Pages.
 > If you do intend to publish to GitHub Pages, modify them only if you know what you are doing.
@@ -102,7 +102,7 @@ export const config = /*#__PURE__*/configuration({
 
 # Table of Contents
 
-The table of contents, which is accessible via the <span class="icon-font" style="vertical-align:middle">menu</span> icon
+The table of contents, which is accessible via the [menu](:Icon (align=middle)) icon
 on the footer by default, is also read from a markdown file. This special markdown file is by default located
 on `docs/md/_toc.md`, though you can change that in `.codedoc/config.ts` as well:
 
@@ -119,7 +119,7 @@ export const config = /*#__PURE__*/configuration({
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">touch_app</span> **NOTE**
+> [touch_app](:Icon) **NOTE**
 >
 > If you customize the address of the table of contents file, make sure to either
 > name it to something that starts with `_`, or is located in a folder whose name starts with an `_`,

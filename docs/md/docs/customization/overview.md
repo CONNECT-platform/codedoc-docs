@@ -47,7 +47,7 @@ export function content(_content: HTMLElement, toc: HTMLElement, renderer: Rende
 
 <br>
 
-> <span class="icon-font" style="vertical-align: sub">touch_app</span> **NOTE**
+> [touch_app](:Icon) **NOTE**
 >
 > Despite the TSX syntax, **CODEDOC** components are not React components. The component library
 > used by codedoc is [CONNECTIVE SDH](https://github.com/CONNECT-platform/connective-sdh), which is a more
@@ -79,7 +79,7 @@ it is a good idea to look at the
 [source code of the default layout component](https://github.com/CONNECT-platform/codedoc/tree/master/src/components) 
 you want to override first.
 
-> <span class="icon-font" style="vertical-align: sub">warning</span> **WARNING**
+> [warning](:Icon) **WARNING**
 >
 > Your custom layout elements might not work with codedoc features if some specific properties
 > of them are missing. So **DO CHECK** the source of the original layout components before

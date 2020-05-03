@@ -7,13 +7,16 @@ markdown flavours:
 - [CommonMark](http://spec.commonmark.org/0.29/)
 - [GitHub Flavored Markdown](https://github.github.com/gfm/)
 
-Plus the [quoted components syntax](https://github.com/CONNECT-platform/marked#custom-quoted-components)
-of `@connectv/marked`. This syntax allows for custom structural components (like buttons, tabs, etc.) to be
+Additionally, you can use [quoted components syntax](https://github.com/CONNECT-platform/marked#custom-quoted-components)
+and [linked components syntax](https://github.com/CONNECT-platform/marked#custom-linked-components)
+of `@connectv/marked`. These allows for custom structural components (like buttons, tabs, etc.) to be
 used inside your markdown files, thereby greatly extending functionality of standard markdown.
 
 ---
 
 ## Component Syntax
+
+### Quoted Components
 
 The quoted component syntax allows for using custom structural components using markdown's own
 `block-quote` element:
@@ -44,6 +47,28 @@ Since components can have markdown content, this means you can use child compone
 >
 /*!*/> > :SecondChildComponent
 ```
+
+<br>
+
+### Linked Components
+
+Similar to quoted components, the linked components allow for using custom structural _inline_ components,
+i.e. components that are whithin other pieces of text, using markdown's `link` elements:
+
+```md
+I have some [custom markdown](:InlineComp (attr1=value1, attr2=value2, ...)) amongst
+some other **markdown** stuff I am writing.
+```
+
+The URL of the link should start with `:` followed by the inline component name, i.e. `:<component-name>`,
+and the title (for convenience put in parantheses in above example) can be utilized to
+pass arguments to the component, with the syntax `attribute=value`, separated by `,`. The text of the link
+is passed to the component as its content, so it can be any markdown accepted as a link's text.
+Note that since you cannot nest markdown links inside each other, you **CANNOT** nest inline components
+inside each other as well.
+
+Note that linked components and quoted components use separate component namespaces, so you can
+utilize the same component name for both a quoted component and a linked component.
 
 ---
 
@@ -132,32 +157,33 @@ Since components can have markdown content, this means you can use child compone
 
 ### Formula
 
-> :Tabs
-> > :Tab title=Markdown
-> > ```md
-> > > :Formula
-> > >
-> > > \text{let}`\;`s \equiv G \cancel{\vdash} s
-> > >
-> > > G \vdash s \implies G \vdash (G \cancel{\vdash} s) \implies \bot
-> > >
-> > > G \vdash \neg{s} \implies G \vdash (G \vdash s) \implies G \vdash s \implies \bot
-> > >
-> > > \implies \neg(G \vdash s) \land \neg(G \vdash \neg{s}) `\\`
-> > > \implies G `\;`\text{is not complete.}
-> > ```
+```md
+Let [G](:Formula) be any consistent logic, and [s](:Formula) a statement
+in [G](:Formula) defined by [s \equiv G \cancel{\vdash} s](:Formula). Then:
+
+> :Formula
 >
-> > :Tab title=How it Looks
-> > > :Formula
-> > >
-> > > \text{let}`\;`s \equiv G \cancel{\vdash} s
-> > >
-> > > G \vdash s \implies G \vdash (G \cancel{\vdash} s) \implies \bot
-> > >
-> > > G \vdash \neg{s} \implies G \vdash (G \vdash s) \implies G \vdash s \implies \bot
-> > >
-> > > \implies \neg(G \vdash s) \land \neg(G \vdash \neg{s}) `\\`
-> > > \implies G `\;`\text{is not complete.}
+> G \vdash s \implies G \vdash (G \cancel{\vdash} s) \implies \bot \implies \neg{(G \vdash s)}
+>
+> G \vdash \neg{s} \implies G \vdash (G \vdash s) \implies G \vdash s \implies \bot \implies \neg{(G \vdash \neg{s})}
+>
+> \overset{\tiny \text{1,2}}{\implies} \neg(G \vdash s) \land \neg(G \vdash \neg{s})
+
+Which means [G](:Formula) cannot be complete, as it neither proves nor disproves [s](:Formula).
+```
+
+Let [G](:Formula) be any consistent logic, and [s](:Formula) a statement
+in [G](:Formula) defined by [s \equiv G \cancel{\vdash} s](:Formula). Then:
+
+> :Formula
+>
+> G \vdash s \implies G \vdash (G \cancel{\vdash} s) \implies \bot \implies \neg{(G \vdash s)}
+>
+> G \vdash \neg{s} \implies G \vdash (G \vdash s) \implies G \vdash s \implies \bot \implies \neg{(G \vdash \neg{s})}
+>
+> \overset{\tiny \text{1,2}}{\implies} \neg(G \vdash s) \land \neg(G \vdash \neg{s})
+
+Which means [G](:Formula) cannot be complete, as it neither proves nor disproves [s](:Formula).
 
 <br>
 
@@ -194,6 +220,20 @@ Since components can have markdown content, this means you can use child compone
 
 <br>
 
+### Icon
+
+```md
+/*!*/You can use icons like [face](:Icon) in the middle of markdown.
+Checkout [material design icons](https://material.io/resources/icons/?style=baseline)
+for possible glyphs.
+```
+
+You can use icons like [face](:Icon) in the middle of markdown.
+Checkout [material design icons](https://material.io/resources/icons/?style=baseline)
+for possible glyphs.
+
+<br>
+
 ### Watermark
 
 ```md
@@ -201,6 +241,8 @@ Since components can have markdown content, this means you can use child compone
 ```
 
 > :Watermark
+
+<br>
 
 ---
 
