@@ -389,7 +389,7 @@ body.dark .darklight-0-0-1>.dark {
     cursor: pointer;
     position: relative;
   }
-  .heading-0-0-6 .icon-font {
+  .anchor-0-0-7 {
     top: 0;
     left: -32px;
     bottom: 0;
@@ -401,14 +401,14 @@ body.dark .darklight-0-0-1>.dark {
     align-items: center;
     padding-right: 8px;
   }
-  .heading-0-0-6:hover .icon-font {
+  .heading-0-0-6:hover .anchor-0-0-7 {
     opacity: 0.5;
     transform: none;
   }
-  .heading-0-0-6:hover .icon-font:hover {
+  .heading-0-0-6:hover .anchor-0-0-7:hover {
     opacity: 1;
   }
-  .button-0-0-7 {
+  .button-0-0-8 {
     color: white;
     border: 2px solid #000000;
     cursor: pointer;
@@ -426,85 +426,85 @@ body.dark .darklight-0-0-1>.dark {
     justify-content: center;
     text-decoration: none;
   }
-  body.dark-mode-animate .button-0-0-7 {
+  body.dark-mode-animate .button-0-0-8 {
     transition: background .15s, color .15s, border-color .15s;
   }
-  .button-0-0-7.icon {
+  .button-0-0-8.icon {
     width: 40px;
     padding: 0;
     font-size: 24px;
     min-width: 0;
   }
-  body.dark .button-0-0-7 {
+  body.dark .button-0-0-8 {
     color: black;
     background: #ffffff;
     border-color: #ffffff;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .button-0-0-7 {
+  body:not(.dark-mode-animate) .button-0-0-8 {
     color: black;
     background: #ffffff;
     border-color: #ffffff;
   }
 }
-  .button-0-0-7:hover {
+  .button-0-0-8:hover {
     color: #000000;
     background: transparent;
     text-decoration: none;
   }
-  body.dark .button-0-0-7:hover {
+  body.dark .button-0-0-8:hover {
     color: #ffffff;
     background: transparent;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .button-0-0-7:hover {
+  body:not(.dark-mode-animate) .button-0-0-8:hover {
     color: #ffffff;
     background: transparent;
   }
 }
-a.button-0-0-7 {
+a.button-0-0-8 {
   height: 28px;
 }
-a.button-0-0-7.icon {
+a.button-0-0-8.icon {
   width: 36px;
   height: 36px;
 }
-  .tabs-0-0-8 .selector {
+  .tabs-0-0-9 .selector {
     overflow: auto;
     white-space: nowrap;
     margin-bottom: -8px;
     padding-right: 24px;
     padding-bottom: 8px;
   }
-  .tabs-0-0-8 .tab {
+  .tabs-0-0-9 .tab {
     border: 1px solid #e0e0e0;
     padding: 8px;
     border-radius: 3px;
   }
-  .tabs-0-0-8 .tab.first {
+  .tabs-0-0-9 .tab.first {
     border-top-left-radius: 0;
   }
-  body.dark-mode-animate .tabs-0-0-8 .tab {
+  body.dark-mode-animate .tabs-0-0-9 .tab {
     transition: border-color .3s;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .tabs-0-0-8 .tab {
+  body:not(.dark-mode-animate) .tabs-0-0-9 .tab {
     border-color: #313131;
   }
 }
-  body.dark .tabs-0-0-8 .tab {
+  body.dark .tabs-0-0-9 .tab {
     border-color: #313131;
   }
-  .tabs-0-0-8 .tab:not(.selected) {
+  .tabs-0-0-9 .tab:not(.selected) {
     display: none;
   }
-  .tabs-0-0-8 .tab>pre:first-child {
+  .tabs-0-0-9 .tab>pre:first-child {
     margin-top: 0;
   }
-  .tabs-0-0-8 .tab>pre:last-child {
+  .tabs-0-0-9 .tab>pre:last-child {
     margin-bottom: 0;
   }
-  .tabs-0-0-8 .selector button {
+  .tabs-0-0-9 .selector button {
     color: #424242;
     border: 1px solid #e0e0e0;
     cursor: pointer;
@@ -523,7 +523,7 @@ a.button-0-0-7.icon {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .tabs-0-0-8 .selector button:after {
+  .tabs-0-0-9 .selector button:after {
     left: 0;
     right: 0;
     bottom: -1px;
@@ -532,55 +532,55 @@ a.button-0-0-7.icon {
     position: absolute;
     background: #f5f5f5;
   }
-  .tabs-0-0-8 .selector button:hover {
+  .tabs-0-0-9 .selector button:hover {
     opacity: 1;
   }
-  .tabs-0-0-8 .selector button.selected {
+  .tabs-0-0-9 .selector button.selected {
     opacity: 1;
     transform: scale(1);
   }
-  body.dark-mode-animate .tabs-0-0-8 .selector button {
+  body.dark-mode-animate .tabs-0-0-9 .selector button {
     transition: background .3s, border-color .3s, color .3s, opacity .1s, transform .1s;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .tabs-0-0-8 .selector button {
+  body:not(.dark-mode-animate) .tabs-0-0-9 .selector button {
     color: #eeeeee;
     background: #212121;
     border-color: #313131;
   }
-  body:not(.dark-mode-animate) .tabs-0-0-8 .selector button:after {
+  body:not(.dark-mode-animate) .tabs-0-0-9 .selector button:after {
     background: #212121;
   }
 }
-  body.dark .tabs-0-0-8 .selector button {
+  body.dark .tabs-0-0-9 .selector button {
     color: #eeeeee;
     background: #212121;
     border-color: #313131;
   }
-  .tabs-0-0-8 .selector button .icon-font {
+  .tabs-0-0-9 .selector button .icon-font {
     opacity: 0.5;
     font-size: 18px;
     margin-left: 16px;
     vertical-align: middle;
   }
-  body.dark .tabs-0-0-8 .selector button:after {
+  body.dark .tabs-0-0-9 .selector button:after {
     background: #212121;
   }
-  body.dark-mode-animate .tabs-0-0-8 .selector button:after {
+  body.dark-mode-animate .tabs-0-0-9 .selector button:after {
     transition: height .1s, bottom .1s, background .3s;
   }
-  .tabs-0-0-8 .selector button.selected:after {
+  .tabs-0-0-9 .selector button.selected:after {
     bottom: -4px;
     height: 8px;
   }
-  .collapse-0-0-9>.label {
+  .collapse-0-0-10>.label {
     cursor: pointer;
     margin: 8px 0;
     display: flex;
     align-items: center;
     user-select: none;
   }
-  .collapse-0-0-9>.content {
+  .collapse-0-0-10>.content {
     opacity: 0;
     max-height: 0;
     transition: opacity .3s;
@@ -588,47 +588,47 @@ a.button-0-0-7.icon {
     border-left: 2px solid rgba(224, 224, 224, 0.5);
     padding-left: 16px;
   }
-  .collapse-0-0-9.open>.content {
+  .collapse-0-0-10.open>.content {
     opacity: 1;
     max-height: none;
     visibility: visible;
   }
-  .collapse-0-0-9.open>.label .icon-font {
+  .collapse-0-0-10.open>.label .icon-font {
     transform: rotate(90deg);
   }
-  body.dark-mode-animate .collapse-0-0-9>.content {
+  body.dark-mode-animate .collapse-0-0-10>.content {
     transition: transform .15s, opacity .15s, border-color .3s;
   }
-  body.dark .collapse-0-0-9>.content {
+  body.dark .collapse-0-0-10>.content {
     border-color: rgba(49, 49, 49, 0.5);
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .collapse-0-0-9>.content {
+  body:not(.dark-mode-animate) .collapse-0-0-10>.content {
     border-color: rgba(49, 49, 49, 0.5);
   }
 }
-  .collapse-0-0-9>.label .text {
+  .collapse-0-0-10>.label .text {
     flex-grow: 1;
   }
-  .collapse-0-0-9>.label .icon-font {
+  .collapse-0-0-10>.label .icon-font {
     margin-right: 32px;
   }
-  .collapse-0-0-9>.label:hover {
+  .collapse-0-0-10>.label:hover {
     color: #000000;
     transition: color .15s;
   }
-  body.dark .collapse-0-0-9>.label:hover {
+  body.dark .collapse-0-0-10>.label:hover {
     color: #ffffff;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .collapse-0-0-9>.label:hover {
+  body:not(.dark-mode-animate) .collapse-0-0-10>.label:hover {
     color: #ffffff;
   }
 }
-  body.dark-mode-animate .collapse-0-0-9>.label .icon-font {
+  body.dark-mode-animate .collapse-0-0-10>.label .icon-font {
     transition: transform .15s;
   }
-  .header-0-0-10 {
+  .header-0-0-11 {
     top: 0;
     right: 0;
     padding: 32px;
@@ -636,7 +636,7 @@ a.button-0-0-7.icon {
     position: fixed;
     text-align: right;
   }
-  .footer-0-0-11 {
+  .footer-0-0-12 {
     left: 0;
     right: 0;
     bottom: 0;
@@ -651,67 +651,67 @@ a.button-0-0-7.icon {
     justify-content: center;
     -webkit-backdrop-filter: blur(12px);
   }
-  body.dark-mode-animate .footer-0-0-11 {
+  body.dark-mode-animate .footer-0-0-12 {
     transition: background .3s;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .footer-0-0-11 {
+  body:not(.dark-mode-animate) .footer-0-0-12 {
     background: rgba(33, 33, 33, 0.85);
   }
 }
-  body.dark .footer-0-0-11 {
+  body.dark .footer-0-0-12 {
     background: rgba(33, 33, 33, 0.85);
   }
-  .footer-0-0-11 .main {
+  .footer-0-0-12 .main {
     overflow: hidden;
     flex-grow: 1;
     text-align: center;
   }
-  .footer-0-0-11 .left {
+  .footer-0-0-12 .left {
     padding-left: 32px;
   }
-  .footer-0-0-11 .right {
+  .footer-0-0-12 .right {
     padding-right: 32px;
   }
 @media screen and (max-width: 800px) {
-  .footer-0-0-11 .left {
+  .footer-0-0-12 .left {
     padding-left: 16px;
   }
-  .footer-0-0-11 .right {
+  .footer-0-0-12 .right {
     padding-right: 16px;
   }
 }
-  .footer-0-0-11 .main>.inside {
+  .footer-0-0-12 .main>.inside {
     display: inline-flex;
     overflow: auto;
     max-width: 100%;
     align-items: center;
   }
-  .footer-0-0-11 .main>.inside hr {
+  .footer-0-0-12 .main>.inside hr {
     width: 2px;
     border: none;
     height: 16px;
     margin: 16px;
     background: #e0e0e0;
   }
-  .footer-0-0-11 .main>.inside a {
+  .footer-0-0-12 .main>.inside a {
     text-decoration: none;
   }
-  .footer-0-0-11 .main>.inside a:hover {
+  .footer-0-0-12 .main>.inside a:hover {
     text-decoration: underline ;
   }
-  body.dark-mode-animate .footer-0-0-11 .main>.inside hr {
+  body.dark-mode-animate .footer-0-0-12 .main>.inside hr {
     transition: background .3s;
   }
-  body.dark .footer-0-0-11 .main>.inside hr {
+  body.dark .footer-0-0-12 .main>.inside hr {
     background: #313131;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .footer-0-0-11 .main>.inside hr {
+  body:not(.dark-mode-animate) .footer-0-0-12 .main>.inside hr {
     background: #313131;
   }
 }
-  .toc-0-0-12 {
+  .toc-0-0-13 {
     top: 0;
     left: 0;
     width: calc(50vw - 464px);
@@ -725,35 +725,35 @@ a.button-0-0-7.icon {
     flex-direction: column;
     padding-bottom: 64px;
   }
-  body.dark-mode-animate .toc-0-0-12 {
+  body.dark-mode-animate .toc-0-0-13 {
     transition: background .3s, border-color .3s;
   }
-  body.dark .toc-0-0-12 {
+  body.dark .toc-0-0-13 {
     background: #1f1f1f;
     border-color: #282828;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .toc-0-0-12 {
+  body:not(.dark-mode-animate) .toc-0-0-13 {
     background: #1f1f1f;
     border-color: #282828;
   }
 }
 @media screen and (max-width: 1200px) {
-  .toc-0-0-12 {
+  .toc-0-0-13 {
     width: 100vw;
     transform: translateX(-100vw);
   }
 }
-  .toc-0-0-12.animated {
+  .toc-0-0-13.animated {
     transition: transform .3s;
   }
-  .toc-0-0-12.active {
+  .toc-0-0-13.active {
     transform: translateX(0);
   }
-  .toc-0-0-12 p {
+  .toc-0-0-13 p {
     margin: 0;
   }
-  .toc-0-0-12 a {
+  .toc-0-0-13 a {
     border: 1px solid transparent;
     display: block;
     padding: 8px;
@@ -763,49 +763,49 @@ a.button-0-0-7.icon {
     border-radius: 3px;
     text-decoration: none;
   }
-  body.dark-mode-animate .toc-0-0-12 a {
+  body.dark-mode-animate .toc-0-0-13 a {
     transition: border-color .3s, background .3s;
   }
-  .toc-0-0-12 a:hover {
+  .toc-0-0-13 a:hover {
     background: #f5f5f5;
     text-decoration: none;
   }
-  .toc-0-0-12 a.current {
+  .toc-0-0-13 a.current {
     background: #f5f5f5;
     border-color: #e7e7e7;
     margin-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  body.dark .toc-0-0-12 a.current {
+  body.dark .toc-0-0-13 a.current {
     background: hsl(0, 0%, 13.2%);
     border-color: #282828;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .toc-0-0-12 a.current {
+  body:not(.dark-mode-animate) .toc-0-0-13 a.current {
     background: #212121;
     border-color: #282828;
   }
 }
 @media screen and (max-width: 1200px) {
-  .toc-0-0-12 a.current {
+  .toc-0-0-13 a.current {
     border-right: 1px solid;
     margin-right: -8px;
     border-radius: 3px;
   }
 }
-  body.dark .toc-0-0-12 a:hover {
+  body.dark .toc-0-0-13 a:hover {
     background: hsl(0, 0%, 13.2%);
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .toc-0-0-12 a:hover {
+  body:not(.dark-mode-animate) .toc-0-0-13 a:hover {
     background: hsl(0, 0%, 13.2%);
   }
 }
-  body.dark-mode-animate .toc-0-0-12.animated {
+  body.dark-mode-animate .toc-0-0-13.animated {
     transition: transform .3s, background .3s, border-color .3s;
   }
-  .content-0-0-13 {
+  .content-0-0-14 {
     padding: 32px;
     overflow: auto;
     flex-grow: 1;
@@ -813,12 +813,12 @@ a.button-0-0-7.icon {
     padding-right: 0;
   }
 @media screen and (max-width: 1200px) {
-  .content-0-0-13 {
+  .content-0-0-14 {
     margin-right: 0;
     padding-right: 32px;
   }
 }
-  .contentnav-0-0-15 {
+  .contentnav-0-0-16 {
     right: 0;
     width: calc(50vw - 496px);
     bottom: 96px;
@@ -829,56 +829,56 @@ a.button-0-0-7.icon {
     padding-left: 48px;
   }
 @media screen and (max-width: 1200px) {
-  .contentnav-0-0-15 {
+  .contentnav-0-0-16 {
     display: none;
   }
 }
-  .contentnav-0-0-15 a {
+  .contentnav-0-0-16 a {
     color: #424242;
     display: block;
     opacity: 0.2;
     text-decoration: none;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .contentnav-0-0-15 {
+  body:not(.dark-mode-animate) .contentnav-0-0-16 {
     border-color: #313131;
   }
-  body:not(.dark-mode-animate) .contentnav-0-0-15 a {
+  body:not(.dark-mode-animate) .contentnav-0-0-16 a {
     color: #eeeeee;
   }
-  body:not(.dark-mode-animate) .contentnav-0-0-15 a:hover, body:not(.dark-mode-animate) .contentnav-0-0-15 a.active {
+  body:not(.dark-mode-animate) .contentnav-0-0-16 a:hover, body:not(.dark-mode-animate) .contentnav-0-0-16 a.active {
     color: #ffffff;
   }
 }
-  body.dark .contentnav-0-0-15 {
+  body.dark .contentnav-0-0-16 {
     border-color: #313131;
   }
-  body.dark .contentnav-0-0-15 a {
+  body.dark .contentnav-0-0-16 a {
     color: #eeeeee;
   }
-  body.dark .contentnav-0-0-15 a:hover, body.dark .contentnav-0-0-15 a.active {
+  body.dark .contentnav-0-0-16 a:hover, body.dark .contentnav-0-0-16 a.active {
     color: #ffffff;
   }
-  body.dark-mode-animate .contentnav-0-0-15 a {
+  body.dark-mode-animate .contentnav-0-0-16 a {
     transition: color .3s, opacity .3s;
   }
-  .contentnav-0-0-15 a:hover, .contentnav-0-0-15 a.active {
+  .contentnav-0-0-16 a:hover, .contentnav-0-0-16 a.active {
     color: #000000;
     opacity: 1;
   }
-  .contentnav-0-0-15 a.h2 {
+  .contentnav-0-0-16 a.h2 {
     margin-left: 12px;
   }
-  .contentnav-0-0-15 a.h3 {
+  .contentnav-0-0-16 a.h3 {
     margin-left: 24px;
   }
-  .contentnav-0-0-15 a.h4 {
+  .contentnav-0-0-16 a.h4 {
     margin-left: 36px;
   }
-  .contentnav-0-0-15 a.h5 {
+  .contentnav-0-0-16 a.h5 {
     margin-left: 48px;
   }
-  .contentnav-0-0-15 a.h6 {
+  .contentnav-0-0-16 a.h6 {
     margin-left: 60px;
   }
 * {
@@ -1020,7 +1020,7 @@ body.dark code {
     background: #282828;
   }
 }
-  .card-0-0-16 {
+  .card-0-0-17 {
     cursor: pointer;
     margin: 16px;
     display: inline-block;
@@ -1031,69 +1031,83 @@ body.dark code {
     border-radius: 8px;
     vertical-align: middle;
   }
-  .card-0-0-16.raised-0 {
+  .card-0-0-17.raised-0 {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
   }
-  .card-0-0-16.raised-1 {
+  .card-0-0-17.raised-1 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .18);
   }
-  .card-0-0-16.raised-2 {
+  .card-0-0-17.raised-2 {
     box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
   }
-  .card-0-0-16:hover {
+  .card-0-0-17:hover {
     transform: translateY(-8px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
   }
-  .card-0-0-16 img {
+  .card-0-0-17 img {
     width: calc(100% + 16px);
     margin: -8px;
     max-width: none;
     margin-top: -24px;
   }
-  .card-0-0-16 strong {
+  .card-0-0-17 strong {
     color: #000000;
     display: block;
     font-size: 18px;
   }
-  body.dark .card-0-0-16 strong {
+  body.dark .card-0-0-17 strong {
     color: #ffffff;
   }
-  .formula-0-0-17 {
+  .tag-0-0-18 {
+    color: white;
+    height: 16px;
+    display: inline-flex;
+    padding: 8px;
+    background: #000000;
+    align-items: center;
+    border-radius: 16px;
+    vertical-align: middle;
+  }
+  body.dark .tag-0-0-18 {
+    color: black;
+    background: #ffffff;
+  }
+  .formula-0-0-19 {
     color: #757575;
     padding: 16px;
     background: #eeeeee;
     border-radius: 3px;
   }
-  body.dark .formula-0-0-17 {
+  body.dark .formula-0-0-19 {
     color: #cacaca;
     background: #282828;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .formula-0-0-17 {
+  body:not(.dark-mode-animate) .formula-0-0-19 {
     color: #cacaca;
     background: #282828;
   }
 }
-  body.dark-mode-animate .formula-0-0-17 {
+  body.dark-mode-animate .formula-0-0-19 {
     transition: background .3s, color .3s;
   }
-  .formula-0-0-17.big {
+  .formula-0-0-19.big {
     font-size: 32px;
   }
-  .formula-0-0-17.center > div {
+  .formula-0-0-19.center > div {
     text-align: center;
   }
-  .line-0-0-18 {
+  .line-0-0-20 {
     cursor: pointer;
     padding: 16px 32px;
     overflow: auto;
     position: relative;
     border-radius: 3px;
   }
-  .line-0-0-18:hover {
+  .line-0-0-20:hover {
     background: #e8e8e8;
   }
-  .line-0-0-18 .counter {
+  .line-0-0-20 .counter {
     top: 0;
     left: 8px;
     width: 32px;
@@ -1105,18 +1119,18 @@ body.dark code {
     text-align: left;
     align-items: center;
   }
-  body.dark .line-0-0-18:hover {
+  body.dark .line-0-0-20:hover {
     background: #323232;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .line-0-0-18:hover {
+  body:not(.dark-mode-animate) .line-0-0-20:hover {
     background: #323232;
   }
 }
-  body.dark-mode-animate .line-0-0-18:hover {
+  body.dark-mode-animate .line-0-0-20:hover {
     transition: background .3s;
   }
-  .watermark-0-0-19 {
+  .watermark-0-0-21 {
     color: #424242;
     cursor: pointer;
     display: inline-block;
@@ -1125,37 +1139,37 @@ body.dark code {
     transition: opacity .15s;
     text-decoration: none !important;
   }
-  body.dark-mode-animate .watermark-0-0-19 {
+  body.dark-mode-animate .watermark-0-0-21 {
     transition: opacity .15s, color .3s;
   }
-  .watermark-0-0-19:hover {
+  .watermark-0-0-21:hover {
     opacity: 1;
     text-decoration: none;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .watermark-0-0-19 {
+  body:not(.dark-mode-animate) .watermark-0-0-21 {
     color: #eeeeee;
   }
 }
-  body.dark .watermark-0-0-19 {
+  body.dark .watermark-0-0-21 {
     color: #eeeeee;
   }
-  .watermark-0-0-19 svg {
+  .watermark-0-0-21 svg {
     width: 2.8rem;
     display: block;
     margin-top: .25rem;
   }
-  .watermark-0-0-19 svg g {
+  .watermark-0-0-21 svg g {
     fill: #424242;
   }
-  body.dark-mode-animate .watermark-0-0-19 svg g {
+  body.dark-mode-animate .watermark-0-0-21 svg g {
     transition: fill .3s;
   }
-  body.dark .watermark-0-0-19 svg g {
+  body.dark .watermark-0-0-21 svg g {
     fill: #eeeeee;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .watermark-0-0-19 svg g {
+  body:not(.dark-mode-animate) .watermark-0-0-21 svg g {
     fill: #eeeeee;
   }
 }
