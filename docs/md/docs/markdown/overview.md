@@ -192,6 +192,22 @@ Which means [G](:Formula) cannot be complete, as it neither proves nor disproves
 
 <br>
 
+### Page-Specific Meta
+
+```md
+> :MetaOverride target=keywords, behavior=extend
+>
+> some, additional, keywords, for this particular page
+```
+
+`MetaOverride` component allows you to specify overrides for meta information
+of a particular page.
+
+> :Buttons
+> > :Button label=Learn More, url=/docs/markdown/meta-override
+
+<br>
+
 ### Dark/Light Content
 
 ```md

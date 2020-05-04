@@ -11,6 +11,7 @@
 > [Collapse](/docs/markdown/collapse)
 > [ToC Navigation](/docs/markdown/toc-nav)
 > [Formula](/docs/markdown/formula)
+> [Page-Specific Meta](/docs/markdown/meta-override)
 > [Custom Components](/docs/markdown/custom-components)
 
 > :Collapse label=Code Features

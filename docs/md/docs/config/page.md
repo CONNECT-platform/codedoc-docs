@@ -178,6 +178,14 @@ export const config = /*#__PURE__*/configuration({
 It is highly recommended to set `subject`, `description` and `keywords` tags since these meta tags
 are pretty important for search engine indexing.
 
+> [touch_app](:Icon) **NOTICE**
+>
+> You can also provide page-specific meta information for `subject`, `description` and `keywords`
+> properties using `MetaOverride` markdown component.
+>
+> > :Buttons
+> > > :Button label=Learn More, url=/docs/markdown/meta-override
+
 ---
 
 ## Favicon
