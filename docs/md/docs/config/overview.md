@@ -67,6 +67,7 @@ export const config = configuration({
 /*!*/  src: {                                 // @see /docs/config/entry
     base: 'docs/md',                     // --> the base folder for all markdowns
     toc: '_toc.md',                      // --> markdown file for toc, relative to `base`
+    not_found: '404.md'                  // --> markdown file for 404 page, relative to `base`
     pick: /\.md$/,                       // --> which files to pick (default: .md files)
     drop: /(^_)|(\/_)/,                  // --> which files to drop (default: _something.md files)
   },

@@ -11,6 +11,7 @@ export const config = /*#__PURE__*/configuration({
   //...
 /*!*/  src: {
 /*!*/    base: 'docs/md',                     // --> the base folder for all markdowns
+/*!*/    not_found: '404.md',                 // --> markdown file for 404 page, relative to `base`
 /*!*/    toc: '_toc.md',                      // --> markdown file for toc, relative to `base`
 /*!*/    pick: /\.md$/,                       // --> which files to pick (default: .md files)
 /*!*/    drop: /(^_)|(\/_)/,                  // --> which files to drop (default: _something.md files)
@@ -132,5 +133,18 @@ simply means
 - Pick files who end in `.md`, 
 - Ignore those whose names start with an underline (or are in a folder
 whose name starts with an underline).
+
+---
+
+## The 404 Page
+
+`not_found` specifies the markdown to be used for creating a 404 page. The same markdown rules will
+be applied to this page as with the rest of the markdown files, it is even processed just like another markdown file.
+This setting is used by the local dev server to serve it properly, and can be used by any CI/CD pipeline
+to serve the proper html when needed.
+
+Note that you might need to configure your hosting provider to serve this file as well, and this is sometimes
+not possible. For example, github will simply serve `404.html`, so the default config will work on GitHub Pages,
+but custom configs won't.
 
 > :ToCPrevNext
