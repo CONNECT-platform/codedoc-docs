@@ -11,6 +11,11 @@
       "hash": "sIcXdiZbmFFWtPt4+wiZFw=="
     },
     {
+      "name": "zoomOnFormula",
+      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/formula/zoom-on-formula.js",
+      "hash": "ieHiCHt9HtYVgl1fDkKgxw=="
+    },
+    {
       "name": "codeSelection",
       "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/code/selection.js",
       "hash": "Mc60la9b+TBSgyULAtSc2g=="
@@ -64,11 +69,6 @@
       "name": "postNavSearch",
       "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js",
       "hash": "Q+T5RWboMiwEvrVkfgpDSg=="
-    },
-    {
-      "name": "zoomOnFormula",
-      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/formula/zoom-on-formula.js",
-      "hash": "ieHiCHt9HtYVgl1fDkKgxw=="
     }
   ],
   "components": [
