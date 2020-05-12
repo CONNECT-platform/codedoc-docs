@@ -162,6 +162,7 @@ export const config = configuration({
     customInlineComponents:              // --> custom inline components available in toc markdown
       DefaultToCMarkdownCustomInlineComponents
   },
+/*!*/  plugins: [],                           // @see /docs/config/plugins
 });
 ```
 

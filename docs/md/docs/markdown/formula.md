@@ -53,25 +53,21 @@ You can also use `Formula` inline component:
 
 ## Enabling Formulas
 
-Formulas require specific stylesheets to properly function. To control the size of each doc page,
-by default these stylesheets are not included in **CODEDOC**. You can enable them via `.codedoc/config.ts`
-easily like this:
+Formulas are not by default plugged into **CODEDOC**, as they require additional resources.
+To enable them, simply import `formulaPlugin` and add it to your plugins via `.codedoc/config.ts`:
 
 ```ts | .codedoc/config.ts
 import { configuration } from '@codedoc/core';
-/*!*/import { enableFormula } from '@codedoc/core/components';
+/*!*/import { formulaPlugin } from '@codedoc/core/components';
 
 // ...
 
 export const config = /*#__PURE__*/configuration({
   // ...
-  page: {
-    // ...
-/*!*/    post: [
-/*!*/      enableFormula,
-/*!*/      // ...
-/*!*/    ]
-  },
+/*!*/  plugins: [
+/*!*/    // ...
+/*!*/    formulaPlugin
+/*!*/  ],
   // ...
 });
 ```

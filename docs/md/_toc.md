@@ -32,6 +32,7 @@
 > [Page Config](/docs/config/page)
 > [Bundle Config](/docs/config/bundle)
 > [Markdown Config](/docs/config/markdown)
+> [Plugins](/docs/config/plugins)
 > [Miscellaneous](/docs/config/misc)
 
 > :Collapse label=Customization

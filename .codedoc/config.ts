@@ -3,7 +3,7 @@ import { configuration,
         DefaultMarkdownCustomComponents,
         DefaultMarkdownCustomInlineComponents,
 } from '@codedoc/core';
-import { enableFormula } from '@codedoc/core/components';
+import { formulaPlugin } from '@codedoc/core/components';
 
 import { theme } from './theme';
 import { Card } from './components/card';
@@ -37,8 +37,7 @@ export const config = /*#__PURE__*/configuration({
         'beautiful',
         'modern',
       ]
-    },
-    post: [enableFormula]
+    }
   },
   misc: {
     github: {
@@ -49,6 +48,7 @@ export const config = /*#__PURE__*/configuration({
       room: 'connectv/codedoc'
     }
   },
+  plugins: [formulaPlugin],
   markdown: {
     customComponents: {
       ...DefaultMarkdownCustomComponents,
