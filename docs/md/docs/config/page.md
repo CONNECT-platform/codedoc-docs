@@ -400,7 +400,7 @@ export const config = /*#__PURE__*/configuration({
 });
 ```
 
-Will set the path of each HTML file on the `data-path` attribute of `body`.
+Will set the path of the source markdown file on the `data-path` attribute of `body`.
 
 Post processor functions are executed in the order provided, after **CODEDOC** itself
 has conducted its own post-processing (adding necessary script and stylesheet imports, 
