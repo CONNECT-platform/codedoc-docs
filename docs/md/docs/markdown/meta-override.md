@@ -27,6 +27,8 @@ attribute. The following values are supported for this attribute:
 - `keywords`: the keywords attributed to content of the page, specifically useful for SEO optimization.
   content must be a comma separated list of keywords.
 
+- `canonical`: the [canonical link](https://en.wikipedia.org/wiki/Canonical_link_element) of the page.
+
 ---
 
 ## Extending Global Meta
@@ -52,5 +54,23 @@ content will be replaced by what you have provided. In case of `extend`, the con
   separated by a space.
 - For `keywords`, the array of new keywords will be concatenated with the array of original keywords, then all
   of them will be joined with `,`.
+
+---
+
+## Custom Meta Properties
+
+You can also use `property` instead of `target` to provide custom meta information for each page.
+For example you can supply custom information for representation of your page in Twitter cards
+like this:
+
+```md
+> :MetaOverride property=twitter:title
+>
+> Title of the page on the Twitter card
+
+> :MetaOverride property=twitter:image
+>
+> An absolute URL for the Twitter card
+```
 
 > :ToCPrevNext
