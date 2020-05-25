@@ -60,17 +60,27 @@ content will be replaced by what you have provided. In case of `extend`, the con
 ## Custom Meta Properties
 
 You can also use `property` instead of `target` to provide custom meta information for each page.
-For example you can supply custom information for representation of your page in Twitter cards
+For example you can supply custom information for representation of your page in social media cards
 like this:
 
 ```md
-> :MetaOverride property=twitter:title
+> :MetaOverride property=og:title
 >
-> Title of the page on the Twitter card
+> Title of the page on the social media cards
 
+> :MetaOverride property=og:image
+>
+> An absolute URL for the social media cards
+```
+
+Additionally, you can provide custom values for `target` attribute as well, though
+you should not use `extend` behavior for such values (as **CODEDOC**'s best guess at how
+to extend such values might result in undesired content values).
+
+```md
 > :MetaOverride property=twitter:image
 >
-> An absolute URL for the Twitter card
+> An absolute URL for the social media cards
 ```
 
 > :ToCPrevNext
