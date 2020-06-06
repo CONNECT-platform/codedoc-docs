@@ -332,11 +332,14 @@ a.button-0-0-3.icon {
     right: 0;
     width: calc(50vw - 496px);
     bottom: 96px;
+    overflow: auto;
     position: fixed;
     font-size: 12px;
+    max-height: 45vh;
     border-left: 1px dashed #e0e0e0;
     margin-left: 64px;
     padding-left: 48px;
+    scroll-behavior: initial;
   }
 @media screen and (max-width: 1200px) {
   .contentnav-0-0-10 {
@@ -449,6 +452,10 @@ body.dark hr {
   body:not(.dark-mode-animate) hr {
     border-color: #313131;
   }
+}
+#-codedoc-toc hr {
+  margin: 16px 0;
+  margin-right: 32px;
 }
 blockquote {
   color: #757575;
