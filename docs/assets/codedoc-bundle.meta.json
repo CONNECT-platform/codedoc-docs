@@ -73,6 +73,16 @@
   ],
   "components": [
     {
+      "name": "TabSelector",
+      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js",
+      "hash": "WYHVSHXUz4Ll98v5oPmSng=="
+    },
+    {
+      "name": "ToCPrevNext",
+      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js",
+      "hash": "xCBcG0xnbau+cXDs8aAZEg=="
+    },
+    {
       "name": "CollapseControl",
       "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js",
       "hash": "xvMl3/BzEiLLpbeHg4MJIw=="
@@ -101,16 +111,6 @@
       "name": "ConfigTransport",
       "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js",
       "hash": "BE2VSed0IQfDIfXpZUshfA=="
-    },
-    {
-      "name": "TabSelector",
-      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js",
-      "hash": "WYHVSHXUz4Ll98v5oPmSng=="
-    },
-    {
-      "name": "ToCPrevNext",
-      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js",
-      "hash": "xCBcG0xnbau+cXDs8aAZEg=="
     }
   ],
   "renderer": {
