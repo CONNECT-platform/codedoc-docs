@@ -4,7 +4,7 @@ The CLI is the recommended way of using **CODEDOC**. To install it, you would ne
 the following first:
 
 - [NodeJS](https://nodejs.org/en/download/)
-- [NPM](https://www.npmjs.com/get-npm)
+- [NPM](https://www.npmjs.com/get-npm) version 10.0 or above
 - [git](https://git-scm.com/downloads)
 
 After installing the above, you can easily install codedoc CLI via NPM:
