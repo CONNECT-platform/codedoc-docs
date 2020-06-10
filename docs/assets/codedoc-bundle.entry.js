@@ -13,24 +13,24 @@ import { loadDeferredIFrames } from '/home/runner/work/codedoc-docs/codedoc-docs
 import { smoothLoading } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/transport/smooth-loading.js';smoothLoading();
 import { tocHighlight } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toc-highlight.js';tocHighlight();
 import { postNavSearch } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js';postNavSearch();
-import { TabSelector } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js';
-import { ToCPrevNext } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 import { CollapseControl } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
 import { GithubSearch } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/github/search.js';
 import { ToCToggle } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toggle/index.js';
 import { GitterToggle } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/gitter/index.js';
 import { DarkModeSwitch } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/darkmode/index.js';
 import { ConfigTransport } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js';
+import { TabSelector } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js';
+import { ToCPrevNext } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 
 const components = {
-  'WYHVSHXUz4Ll98v5oPmSng==': TabSelector,
-  'xCBcG0xnbau+cXDs8aAZEg==': ToCPrevNext,
   'xvMl3/BzEiLLpbeHg4MJIw==': CollapseControl,
   '9j5oOgx2Q3P6F5cKZT+bFQ==': GithubSearch,
   'ImhB47txCQ0DSQNMAg4ZBw==': ToCToggle,
   'Dp1O8v0236X9cfL1GiZiuw==': GitterToggle,
   '2QjAvZcwowE7/w7gzBp58A==': DarkModeSwitch,
-  'BE2VSed0IQfDIfXpZUshfA==': ConfigTransport
+  'BE2VSed0IQfDIfXpZUshfA==': ConfigTransport,
+  'WYHVSHXUz4Ll98v5oPmSng==': TabSelector,
+  'xCBcG0xnbau+cXDs8aAZEg==': ToCPrevNext
 };
 
 const renderer = getRenderer();
