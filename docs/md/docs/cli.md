@@ -164,34 +164,43 @@ codedoc update            # --> Or simply `codedoc u`.
 
 <br>
 
-The `update` command simply invokes NPM's own `update` command, so by default it will
-not violate [semver's version matching rules](https://docs.npmjs.com/misc/semver).
-This might mean that sometimes `codedoc update` won't update your CLI / CODEDOC installation.
-You can enforce an update to latest version by using `update latest` command:
+### Major Updates
+
+`update` command will not upgrade the CLI or local installation to the latest if there is a _major update_
+between your installed version and the latest version. This is because _major updates_ might include
+breaking changes (by definition).
+
+If you are sure that there are no breaking changes in the update that would affect you, you could
+update to latest version using `update latest` command:
 
 ```bash
 codedoc update latest     # --> Forcefully update everything to latest version
 ```
 
+> [update](:Icon) **VERSION NOTICE**
 >
-> **`$ codedoc version`** \
-> `# Fetching version info ...` \
-> `# @codedoc/cli version 0.2.3 ...................................... latest: 0.4.0` 
->
-> **`$ codedoc update`** \
-> `# nothing happens`
->
-> **`$ codedoc update latest`**\
-> `# updating ...`
+> The `update latest` command is only available since `@codedoc/cli@0.2.0`, so if you have a version
+> before that, you need to upgrade using `npm i -g @codedoc/cli@latest`.
 
-The `update latest` command is only available since `@codedoc/cli@0.2.0`, so if you have a version
-before that, you need to upgrade using `npm i -g @codedoc/cli@latest`.
+<br>
 
-> [warning](:Icon) **CAUTION**
+### Update Permissions
+
+By default, `update` and `update latest` commands will attempt to update both the CLI and the local installation
+(if run in a **CODEDOC** project folder). In some shell environments, you might not have permissions to update
+the CLI, while you do have permissions to update the local installation. In such situations, you can use
+the `--local` flag to only update your local installation:
+
+```bash
+codedoc update --local           # --> Only update local installation, to latest compatible version
+codedoc update latest --local    # --> Only update local installation, to latest version
+```
+
+> [update](:Icon) **VERSION NOTICE**
 >
-> Updates that violate semver's version matching rules might actually not be backwards compatible.
-> This typically happens due to a major update. So **ONLY USE** `codedoc update latest` when you know
-> that the update is backwards-compatible and/or its breaking changes wouldn't affect your project.
+> The `--local` flag is only available since `@codedoc/cli@0.2.1`, so if you have a version
+> before that, you need to upgrade using `codedoc update` or `npm i -g @codedoc/cli@latest`.
+
 
 
 > :ToCPrevNext
