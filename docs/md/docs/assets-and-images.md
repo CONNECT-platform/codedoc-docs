@@ -1,7 +1,7 @@
 # Images and Assets
 
-You most probably want to have some images, scripts, stylesheets, etc. to serve
-alongside your docs and use them inside your docs. Though specifics of how they are
+You probably have some images, scripts, stylesheets, etc. to serve
+alongside your docs and want to use them inside your docs. Though specifics of how they are
 served is actually up to your hosting provider (for example GitHub Pages), **CODEDOC**
 comes with some utilities to make referencing your assets in your docs easier.
 
