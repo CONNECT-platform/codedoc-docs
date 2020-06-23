@@ -33,6 +33,7 @@
 > [Bundle Config](/docs/config/bundle)
 > [Markdown Config](/docs/config/markdown)
 > [Plugins](/docs/config/plugins)
+> [Build Hooks](/docs/config/hooks)
 > [Miscellaneous](/docs/config/misc)
 
 > :Collapse label=Customization

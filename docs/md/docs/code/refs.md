@@ -82,7 +82,8 @@ titles:
 ## Tab References
 
 If you have a code snippet inside a `Tabs` component, you can also use references
-to reference other tabs, with using `tab:<tab-title>` format for your link:
+to reference other tabs, with using `tab:<tab-title>` (or `tab:<tab-id>` for when you
+have [specified a tab ID](/docs/markdown/tabs#referencing-via-tab-ids)) format for your link:
 
 ````
 > :Tabs

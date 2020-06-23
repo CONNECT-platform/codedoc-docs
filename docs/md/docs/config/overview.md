@@ -96,6 +96,8 @@ export const config = configuration({
     ],
   },
 
+/*!*/  afterBuild: [],                        // @see /docs/config/hooks
+
   dev: {
     port: 3000                           // --> the port for local dev server
   },

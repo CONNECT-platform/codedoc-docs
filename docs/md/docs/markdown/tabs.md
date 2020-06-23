@@ -160,6 +160,55 @@ You can reference another tab from a code snippet within one tab:
 
 <br>
 
+### Referencing via Tab IDs
+
+In case the title of a tab is too long, you can also give it an `id` and use that `id` to reference it
+from code snippet in another tab:
+
+````md
+> :Tabs
+> > :Tab title=Component Code
+> >
+> > ```tsx | index.tsx
+/*!*/> > import { CompStyles } from './styles'  // @see [Styling code](tab:styling)
+> >
+> > export function Comp() {
+> >   ... 
+> > }
+> > ```
+>
+/*!*/> > :Tab title=Styling Code, id=styling
+> > ```tsx | style.ts
+> > export const CompStyle = { ... }
+> > ```
+````
+
+> :Tabs
+> > :Tab title=Component Code
+> >
+> > ```tsx | index.tsx
+> > import { CompStyles } from './styles'  // @see [Styling code](tab:styling)
+> >
+> > export function Comp() {
+> >   ... 
+> > }
+> > ```
+>
+> > :Tab title=Styling Code, id=styling
+> > ```tsx | style.ts
+> > export const CompStyle = { ... }
+> > ```
+
+> [info](:Icon) **IMPORTANT**
+>
+> If you specify `id` property of a tab, then all references MUST use `id` to link
+> to the tab.
+>
+> Basically, you are always using `id` to reference a particular tab. Just when you
+> don't specify it, it defaults to the value provided for `title` for convenience.
+
+<br>
+
 > Read [this entry](/docs/code/refs) for more information on in-code references.
 
 > :ToCPrevNext
