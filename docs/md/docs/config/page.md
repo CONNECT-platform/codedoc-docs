@@ -22,10 +22,10 @@ export const config = /*#__PURE__*/configuration({
           config.page.title.connector
         ),
     },
-    favicon: undefined                   // --> link to your fav icon
+    favicon: undefined,                  // --> link to your fav icon
     meta: {                              // --> meta tags of each page
-      subject: undefined                 // --> the subject meta tag for each page
-      description: undefined             // --> description meta tag for each page
+      subject: undefined,                // --> the subject meta tag for each page
+      description: undefined,            // --> description meta tag for each page
       keywords: [],                      // --> a list of SEO keywords
       themeColor: '#212121',             // --> the browser bar color of your docs
       appleMobileWebStatusBarStyle:      // --> same as above, but for iOS Safari
@@ -35,7 +35,7 @@ export const config = /*#__PURE__*/configuration({
       text: {                            // --> font used for texts
         url:                             // --> URL of font used for texts
           'https://fonts.googleapis.com/css?family=Hind:400,700&display=swap',
-        name: 'Hind'                     // --> name of font used for texts
+        name: 'Hind',                    // --> name of font used for texts
         fallback: 'sans-serif'           // --> the fallback font for texts
       },
       code: {                            // --> font used for codes
@@ -75,10 +75,10 @@ export const config = /*#__PURE__*/configuration({
       base: 'My Project',
       connector: ' > ',
     },
-    favicon: '/favicon.ico'
+    favicon: '/favicon.ico',
     meta: {
-      subject: 'An Awesome Project'
-      description: 'Pure awsomeness that helps you become awsome as well'
+      subject: 'An Awesome Project',
+      description: 'Pure awsomeness that helps you become awsome as well',
       keywords: ['project', 'meine', 'awesome'],
     },
   },
@@ -163,7 +163,7 @@ export const config = /*#__PURE__*/configuration({
   page: {
     // ...
     meta: {
-      subject: 'An Awesome Project'
+      subject: 'An Awesome Project',
       description: 'Pure awsomeness that helps you become awsome as well',
       keywords: ['project', 'meine', 'awesome'],
 /*!*/      themeColor: '#212121',                      // @see [Google's docs](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
@@ -227,7 +227,7 @@ export const config = /*#__PURE__*/configuration({
       text: {                            // --> font used for texts
         url:                             // --> URL of font used for texts
           'https://fonts.googleapis.com/css?family=Hind:400,700&display=swap',
-        name: 'Hind'                     // --> name of font used for texts
+        name: 'Hind',                    // --> name of font used for texts
         fallback: 'sans-serif'           // --> the fallback font for texts
       },
       code: {                            // --> font used for codes
@@ -257,7 +257,7 @@ export const config = /*#__PURE__*/configuration({
       text: {
         url:
           'https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap',
-        name: 'Comic Neue'
+        name: 'Comic Neue',
         fallback: 'cursive'
       },
     },
@@ -284,8 +284,8 @@ export const config = /*#__PURE__*/configuration({
     //...
     fonts: {
       icon: {
-        url: '<URL to my icon font and optionally its outline version>'
-        name: '<Name of the icon font>'
+        url: '<URL to my icon font and optionally its outline version>',
+        name: '<Name of the icon font>',
         outline: '<Name of the outline icon font>'       // --> if not provided, this will default to `<name> Outlined`
       },
     },
