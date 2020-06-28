@@ -128,6 +128,25 @@ export const config = /*#__PURE__*/configuration({
 > > :Buttons
 > > > :Button url=/docs/config/output#project-namespace, label=Learn More
 
+<br>
+
+### Using Docker
+
+Projects initialized using `codedoc init` also include a `Dockerfile` and a `docker-compose.yml` file.
+If you want to run the development server inside a container, you can just run this:
+
+```bash
+docker-compose up
+```
+
+> [warning](:Icon) **WARNING**
+>
+> If you want to use your own custom docker setup, be careful not to volume
+> `.codedoc/node_modules` folder. The host environment and the container environment typically differ
+> greatly and should not share modules. It is always a good idea to start from the default docker configuration:
+> - [Default `Dockerfile`](https://github.com/CONNECT-platform/codedoc-boilerplate/blob/master/Dockerfile)
+> - [Default `docker-compose.yml`](https://github.com/CONNECT-platform/codedoc-boilerplate/blob/master/docker-compose.yml)
+
 ---
 
 ## Publishing

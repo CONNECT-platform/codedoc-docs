@@ -50,24 +50,6 @@ export const config = /*#__PURE__*/configuration({
       room: 'connectv/codedoc'
     }
   },
-  afterBuild: [
-    async function logFinished(build: Build<CodedocConfig>) {
-      console.log();
-      console.log('Build Finished!!!!');
-
-      console.log('These files were built:: ');
-      console.log(build.source);
-
-      console.log('This config was used:: ');
-      console.log(build.config);
-
-      // console.log('These are the generated files:: ');
-      // console.log(build.built);
-
-      console.log('Was it partial?:: ');
-      console.log(build.partial);
-    }
-  ],
   plugins: [formulaPlugin],
   markdown: {
     customComponents: {
