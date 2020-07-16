@@ -101,14 +101,18 @@ to see how exactly these documentations were created using codedoc.
 > :Tabs
 > > :Tab title=the markdown
 > >
-> > ````md
+> > ````
 > > So I have some code with enhanced features here:
 > > ```tsx
-> > import { build } from '@codedoc/core';         // --> programmatically import codedoc
-> > import { join } from 'path';                   // @see [official docs](https://nodejs.org/api/path.html)
+> > /*!*//*!*/import { build } from '@codedoc/core';         // --> programmatically import codedoc
+> > /*!*//*!*/import { join } from 'path';                   // @see [official docs](https://nodejs.org/api/path.html)
 > >
 > > function doStuff() {                           // --> this function does stuff.
 > >   console.log('Lets see the markdown again');  // @see tab:the markdown
+> > /*!*//*-*/  console.log('This line is removed');
+> > /*!*//*+*/  console.log('This line is added');
+> >
+> > /*!*/  this./*~*/methodWithErrors()/*~*/;
 > > }
 > > ```
 > > > :Buttons
@@ -119,11 +123,15 @@ to see how exactly these documentations were created using codedoc.
 > >
 > > So I have some code with enhanced features here:
 > > ```tsx
-> > import { build } from '@codedoc/core';         // --> programmatically import codedoc
-> > import { join } from 'path';                   // @see [official docs](https://nodejs.org/api/path.html)
+> > /*!*/import { build } from '@codedoc/core';         // --> programmatically import codedoc
+> > /*!*/import { join } from 'path';                   // @see [official docs](https://nodejs.org/api/path.html)
 > >
 > > function doStuff() {                           // --> this function does stuff.
 > >   console.log('Lets see the markdown again');  // @see tab:the markdown
+> > /*-*/  console.log('This line is removed');
+> > /*+*/  console.log('This line is added');
+> >
+> >   this./*~*/methodWithErrors()/*~*/;
 > > }
 > > ```
 > > > :Buttons

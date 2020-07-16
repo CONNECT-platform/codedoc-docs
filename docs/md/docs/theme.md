@@ -115,39 +115,45 @@ for these two properties must be partials of `CodeTheme` interface:
 
 ```ts
 export interface CodeTheme {
-  background: string;                // --> CSS color string, background of the snippet
-  text: string;                      // --> CSS color string, default text color
-  shadow: string;                    // --> CSS box-shadow string, shadow around a snippet
+  background: string;                   // --> CSS color string, background of the snippet
+  text: string;                         // --> CSS color string, default text color
+  shadow: string;                       // --> CSS box-shadow string, shadow around a snippet
 
-  lineHover: string;                 // --> CSS color string, background of a hovered line
-  lineHightlight: string;            // --> CSS color string, background of a highlighted line
-  lineHighlightText: string;         // --> CSS color string, default text color of a highlighted line
-  lineCounter: string;               // --> CSS color string, color of line counters
-  lineCounterBorder: string;         // --> CSS color string, color of the line counter border
-  lineCounterBorderHover: string;    // --> CSS color string, color of the line counter border in a hovered line
-  lineCounterHighlight: string;      // --> CSS color string, color of line counter in a highlighted line
+  lineHover: string;                    // --> CSS color string, background of a hovered line
+  lineHighlight: string;                // --> CSS color string, background of a highlighted line
+  lineHighlightAdded: string;           // --> CSS color string, background of a highlighted "Added" line
+  lineHighlightAddedIndicator: string;  // --> CSS color string, color of the "+" sign on "Added" lines
+  lineHighlightRemoved: string;         // --> CSS color string, background of a highlighted "Removed" line
+  lineHighlightRemovedIndicator: string;// --> CSS color string, color of the "-" sign on "Removed" lines
+  lineHighlightText: string;            // --> CSS color string, default text color of a highlighted line
+  lineCounter: string;                  // --> CSS color string, color of line counters
+  lineCounterBorder: string;            // --> CSS color string, color of the line counter border
+  lineCounterBorderHover: string;       // --> CSS color string, color of the line counter border in a hovered line
+  lineCounterHighlight: string;         // --> CSS color string, color of line counter in a highlighted line
+  errorUnderline: string;               // --> CSS color string, color of wavy underline for "error" parts
+  warningUnderline: string;             // --> CSS color string, color of wavy underline for "warning" parts
 
-  keyword: string;                   // --> CSS color string, color of keywords, e.g. `import`, `return`, etc.
-  boolean: string;                   // --> CSS color string, color of boolean values
-  number: string;                    // --> CSS color string, color of numeric values
-  string: string;                    // --> CSS color string, color of string literals
-  function: string;                  // --> CSS color string, color of function tokens
-  parameter: string;                 // --> CSS color string, color of function parameters
-  tag: string;                       // --> CSS color string, color of HTML, JSX and TSX tags
-  comment: string;                   // --> CSS color string, color of comments
-  operator: string;                  // --> CSS color string, color of operators
-  punctuation: string;               // --> CSS color string, color of punctuation tokens
-  builtin: string;                   // --> CSS color string, color of builtin values
-  className: string;                 // --> CSS color string, color of tag class names (HTML/JSX/TSX)
-  attrName: string;                  // --> CSS color string, color of tag attribute names (HTML/JSX/TSX)
-  attrValue: string;                 // --> CSS color string, color of tag attribute values (HTML/JSX/TSX)
-  plainText: string;                 // --> CSS color string, color of plain text in HTML/JSX/TSX tags
-  script: string;                    // --> CSS color string, color of script tokens
-  placeholder: string;               // --> CSS color string, color of sass placeholders
-  selector: string;                  // --> CSS color string, color of css selectors
-  property: string;                  // --> CSS color string, color of css properties
-  important: string;                 // --> CSS color string, color of `important!` keyword
-  cssfunc: string;                   // --> CSS color string, color of css functions
+  keyword: string;                      // --> CSS color string, color of keywords, e.g. `import`, `return`, etc.
+  boolean: string;                      // --> CSS color string, color of boolean values
+  number: string;                       // --> CSS color string, color of numeric values
+  string: string;                       // --> CSS color string, color of string literals
+  function: string;                     // --> CSS color string, color of function tokens
+  parameter: string;                    // --> CSS color string, color of function parameters
+  tag: string;                          // --> CSS color string, color of HTML, JSX and TSX tags
+  comment: string;                      // --> CSS color string, color of comments
+  operator: string;                     // --> CSS color string, color of operators
+  punctuation: string;                  // --> CSS color string, color of punctuation tokens
+  builtin: string;                      // --> CSS color string, color of builtin values
+  className: string;                    // --> CSS color string, color of tag class names (HTML/JSX/TSX)
+  attrName: string;                     // --> CSS color string, color of tag attribute names (HTML/JSX/TSX)
+  attrValue: string;                    // --> CSS color string, color of tag attribute values (HTML/JSX/TSX)
+  plainText: string;                    // --> CSS color string, color of plain text in HTML/JSX/TSX tags
+  script: string;                       // --> CSS color string, color of script tokens
+  placeholder: string;                  // --> CSS color string, color of sass placeholders
+  selector: string;                     // --> CSS color string, color of css selectors
+  property: string;                     // --> CSS color string, color of css properties
+  important: string;                    // --> CSS color string, color of `important!` keyword
+  cssfunc: string;                      // --> CSS color string, color of css functions
 }
 ```
 
