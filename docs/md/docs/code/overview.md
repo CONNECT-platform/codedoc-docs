@@ -26,13 +26,13 @@ As a result, codedoc comes with a host of features on code snippets to enhance l
 > >}
 > >
 > >func main() {
-> >    nextInt := intSeq()
-> >    fmt.Println(nextInt())
-> >    fmt.Println(nextInt())
-> >    fmt.Println(nextInt())
+> >/*!*//*-*/    nextInt := intSeq()
+> >/*!*//*-*/    fmt.Println(nextInt())
+> >    /*~*/fmt.Println(nextInt())/*~*/
+> >    /*~warn~*/fmt.Println(nextInt())/*~warn~*/
 > >
-> >    newInts := intSeq()
-> >    fmt.Println(newInts())
+> >/*!*//*+*/    newInts := intSeq()
+> >/*!*//*+*/    fmt.Println(newInts())
 > >}
 > >```
 > >````
@@ -52,15 +52,14 @@ As a result, codedoc comes with a host of features on code snippets to enhance l
 > >}
 > >
 > >func main() {
-> >    nextInt := intSeq()
-> >    fmt.Println(nextInt())
-> >    fmt.Println(nextInt())
-> >    fmt.Println(nextInt())
+> >/*-*/    nextInt := intSeq()
+> >/*-*/    fmt.Println(nextInt())
+> >    /*~*/fmt.Println(nextInt())/*~*/
+> >    /*~warn~*/fmt.Println(nextInt())/*~warn~*/
 > >
-> >    newInts := intSeq()
-> >    fmt.Println(newInts())
+> >/*+*/    newInts := intSeq()
+> >/*+*/    fmt.Println(newInts())
 > >}
-> >```
 
 <br>
 
@@ -190,6 +189,27 @@ As a result, codedoc comes with a host of features on code snippets to enhance l
 
 > :Buttons
 > > :Button label=Learn More, url=/docs/code/refs
+
+---
+
+## Linking Code-Snippets
+
+```md
+> :Buttons
+> > :Button url=#code7-l2:l2, label=First Button Code
+>
+> > :Button url=#code7-l4:l4, label=Second Button Code
+```
+
+> :Buttons
+> > :Button url=#code7-l2:l2, label=First Button Code
+>
+> > :Button url=#code7-l4:l4, label=Second Button Code
+
+<br>
+
+> :Buttons
+> > :Button url=/docs/code/links, label=Learn More
 
 ---
 
