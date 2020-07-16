@@ -69,6 +69,11 @@
       "name": "postNavSearch",
       "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js",
       "hash": "Q+T5RWboMiwEvrVkfgpDSg=="
+    },
+    {
+      "name": "copyLineLinks",
+      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/code/line-links/copy-line-link.js",
+      "hash": "tiug9SEj5J5iPnQbZ/VoeA=="
     }
   ],
   "components": [
