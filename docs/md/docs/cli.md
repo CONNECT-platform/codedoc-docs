@@ -220,6 +220,58 @@ codedoc update latest --local    # --> Only update local installation, to latest
 > The `--local` flag is only available since `@codedoc/cli@0.2.1`, so if you have a version
 > before that, you need to upgrade using `codedoc update` or `npm i -g @codedoc/cli@latest`.
 
+---
 
+## Plugins
+
+With `codedoc install` (or `codedoc install plugin`), you can also install plugins. A plugin
+can be any NPM package that lives inside `.codedoc` folder and is either used by `.codedo`, your
+own custom components, etc.
+
+```bash
+codedoc install @codedoc/coding-blog-plugin   # --> installs coding.blog plugin
+```
+
+<br>
+
+Use `codedoc update plugins` for keeping plugins up to date:
+
+```bash
+codedoc update plugins                        # --> soft updates all plugins
+```
+
+Or use `codedoc update plugin` for updating a particular plugin (and no need to worry about
+grammatically correct version of the command, the CLI is pretty forgiving):
+
+```bash
+codedoc update plugin @codedoc/coding-blog-plugin
+```
+
+<br>
+
+If `codedoc update plugins` does not update a plugin properly, it is perhaps because
+there is a major difference version. In such a case, you can manually update the plugin
+using `codedoc install`:
+
+```bash
+codedoc install my-plugin
+# -- OR, for really enfocring major updates --
+codedoc install my-plugin@latest
+```
+
+<br>
+
+> [warning](:Icon) **BE CAREFUL!**
+>
+> Major updates of packages might have breaking changes with them, so it is always
+> a good idea to see if the update will break any of your code.
+
+
+<br>
+
+> [update](:Icon) **VERSION NOTICE**
+>
+> Plugin management is only available since `@codedoc/cli@0.2.2`, so if you have a version
+> before that, you need to upgrade using `codedoc update` or `npm i -g @codedoc/cli@latest`.
 
 > :ToCPrevNext
