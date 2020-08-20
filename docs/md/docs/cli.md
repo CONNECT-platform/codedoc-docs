@@ -66,6 +66,28 @@ cd my-awesome-project                        # --> lets go inside
 codedoc install                              # --> and install local dependencies.
 ```
 
+<br>
+
+### Forking or Using Templates
+
+When forking or using a template project, you get some already set configuration that you
+most probably need to modify. For example, typically you need to change the [title configuration](/docs/config/page#page-title)
+of your pages or [the GitHub integration configuration](/docs/config/misc#github-integration).
+To assist with that process, **CODEDOC** CLI is equipped with the `codedoc check` command, which
+will check your **CODEDOC** configuration against environment settings and inform you of possible
+configuration changes you need to make:
+
+```bash
+git clone <my-forked-project>.git            # --> Clone your own fork
+cd my-forked-project                         # --> Lets go inside
+codedoc install                              # --> Install all necessary dependencies
+/*!*/codedoc check                                # --> Check project configuration
+```
+> [update](:Icon) **VERSION NOTICE**
+>
+> The `check` command is only available since `@codedoc/cli@0.2.5`, so if you have a version
+> before that, you need to upgrade using `codedoc update` or `npm i -g @codedoc/cli@latest`.
+
 ---
 
 ## Development
