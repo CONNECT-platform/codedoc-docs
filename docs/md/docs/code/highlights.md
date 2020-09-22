@@ -189,7 +189,7 @@ public Option<int> /*~*/method() =>
 
 > [warning](:Icon) **WARNING**
 >
-> Since `/*~*/` and `/*~warn*/` are interleaved within rest of the syntax,
+> Since `/*~*/` and `/*~warn~*/` are interleaved within rest of the syntax,
 > they ONLY WORK in languages supporting `/* ... */` comment syntax. They are
 > also not pre-processed, so they will be copied alongside the rest of the code.
 
