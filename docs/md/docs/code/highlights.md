@@ -163,7 +163,7 @@ Similarly you can use `/*~warn~*/` to underline parts that would result in a war
 ````
 ```csharp
 public Option<int> method() =>
-/*!*/  new Dictionary<int, int>()./*~*/TryGetValue/*~*/(0);
+/*!*/  new Dictionary<int, int>()./*~warn~*/TryGetValue/*~warn~*/(0);
 ```
 ````
 ```csharp
