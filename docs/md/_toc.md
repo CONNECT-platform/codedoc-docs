@@ -8,6 +8,7 @@
 > [Markdown Overview](/docs/markdown/overview)
 > [Buttons](/docs/markdown/buttons)
 > [Tabs](/docs/markdown/tabs)
+> [Footnotes](/docs/markdown/footnote)
 > [Collapse](/docs/markdown/collapse)
 > [ToC Navigation](/docs/markdown/toc-nav)
 > [Formula](/docs/markdown/formula)

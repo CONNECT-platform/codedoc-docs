@@ -123,6 +123,25 @@ utilize the same component name for both a quoted component and a linked compone
 
 <br>
 
+### Footnotes
+
+```md
+So you can have footnotes[just write them like this.](:Footnote).
+
+> :Footnotes
+```
+
+So you can have footnotes[just write them like this.](:Footnote).
+
+> :Footnotes
+
+<br>
+
+> :Buttons
+> > :Button label=Learn More, url=/docs/markdown/footnote
+
+<br>
+
 ### Collapse
 
 ```md
