@@ -163,7 +163,7 @@ Similarly you can use `/*~warn~*/` to underline parts that would result in a war
 ````
 ```csharp
 public Option<int> method() =>
-/*!*/  new Dictionary<int, int>()./*~*/TryGetValue/*~*/(0);
+/*!*/  new Dictionary<int, int>()./*~warn~*/TryGetValue/*~warn~*/(0);
 ```
 ````
 ```csharp
@@ -189,7 +189,7 @@ public Option<int> /*~*/method() =>
 
 > [warning](:Icon) **WARNING**
 >
-> Since `/*~*/` and `/*~warn*/` are interleaved within rest of the syntax,
+> Since `/*~*/` and `/*~warn~*/` are interleaved within rest of the syntax,
 > they ONLY WORK in languages supporting `/* ... */` or `(* ... *)` comment syntax. They are
 > also not pre-processed, so they will be copied alongside the rest of the code.
 

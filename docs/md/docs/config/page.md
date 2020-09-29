@@ -47,7 +47,7 @@ export const config = /*#__PURE__*/configuration({
       },
       icon: {                            // --> the icon font
         url:                             // --> url of hte icon font (and perhaps the outline icon font)
-          'https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined',
+          'https://fonts.googleapis.com/icon?family=Material+Icons%7CMaterial+Icons+Outlined',
         name: 'Material Icons',          // --> name of the icon font
         outline:                         // --> name of the outline icon font
           'Material Icons Outlined'
