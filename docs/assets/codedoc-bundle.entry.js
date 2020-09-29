@@ -14,6 +14,7 @@ import { smoothLoading } from '/home/runner/work/codedoc-docs/codedoc-docs/.code
 import { tocHighlight } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toc-highlight.js';tocHighlight();
 import { postNavSearch } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js';postNavSearch();
 import { copyLineLinks } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/code/line-links/copy-line-link.js';copyLineLinks();
+import { gatherFootnotes } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/footnote/gather-footnotes.js';gatherFootnotes();
 import { CollapseControl } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
 import { GithubSearch } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/github/search.js';
 import { ToCToggle } from '/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toggle/index.js';

@@ -74,6 +74,11 @@
       "name": "copyLineLinks",
       "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/code/line-links/copy-line-link.js",
       "hash": "tiug9SEj5J5iPnQbZ/VoeA=="
+    },
+    {
+      "name": "gatherFootnotes",
+      "filename": "/home/runner/work/codedoc-docs/codedoc-docs/.codedoc/node_modules/@codedoc/core/dist/es6/components/footnote/gather-footnotes.js",
+      "hash": "cMVzG0eLyEYTAiMt4TN8jQ=="
     }
   ],
   "components": [

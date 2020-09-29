@@ -456,6 +456,61 @@ body.dark a {
   max-width: 768px;
   transition: opacity .15s;
 }
+table {
+  margin: 0 auto;
+  overflow: auto;
+  max-width: 100%;
+  min-width: 400px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+table th, table td {
+  padding: 8px 16px;
+  text-align: left;
+}
+table th {
+  border-bottom: 1px solid #C8C8C8;
+}
+table td {
+  border-bottom: 1px solid #e0e0e0;
+}
+table tr:nth-child(even) {
+  background: #eeeeee;
+  border-radius: 3px;
+}
+table tr:last-child > td {
+  border-bottom: none;
+}
+body.dark table tr:nth-child(even) {
+  background: #282828;
+}
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) table tr:nth-child(even) {
+    background: #282828;
+  }
+}
+body.dark-mode-animate table tr:nth-child(even) {
+  transition: background .3s;
+}
+body.dark table td {
+  border-color: #313131;
+}
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) table td {
+    border-color: #313131;
+  }
+}
+body.dark table th {
+  border-color: #4D4D4D;
+}
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) table th {
+    border-color: #4D4D4D;
+  }
+}
+body.dark-mode-animate table th, body.dark-mode-animate table td {
+  transition: border-color .3s;
+}
 hr {
   border: none;
   margin: 64px;
@@ -1242,42 +1297,52 @@ body.dark code {
     color: black;
     background: #ffffff;
   }
-  .formula-0-0-19 {
+  .footnotes-0-0-19>div {
+    display: flex;
+  }
+  .footnotes-0-0-19>div>span {
+    font-weight: bold;
+    margin-right: 16px;
+  }
+  .footnotes-0-0-19>div>marker>p {
+    margin: 0;
+  }
+  .formula-0-0-20 {
     color: #757575;
     padding: 16px;
     background: #eeeeee;
     border-radius: 3px;
   }
-  body.dark .formula-0-0-19 {
+  body.dark .formula-0-0-20 {
     color: #cacaca;
     background: #282828;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .formula-0-0-19 {
+  body:not(.dark-mode-animate) .formula-0-0-20 {
     color: #cacaca;
     background: #282828;
   }
 }
-  body.dark-mode-animate .formula-0-0-19 {
+  body.dark-mode-animate .formula-0-0-20 {
     transition: background .3s, color .3s;
   }
-  .formula-0-0-19.big {
+  .formula-0-0-20.big {
     font-size: 32px;
   }
-  .formula-0-0-19.center > div {
+  .formula-0-0-20.center > div {
     text-align: center;
   }
-  .line-0-0-20 {
+  .line-0-0-21 {
     cursor: pointer;
     padding: 16px 32px;
     overflow: auto;
     position: relative;
     border-radius: 3px;
   }
-  .line-0-0-20:hover {
+  .line-0-0-21:hover {
     background: #e8e8e8;
   }
-  .line-0-0-20 .counter {
+  .line-0-0-21 .counter {
     top: 0;
     left: 8px;
     width: 32px;
@@ -1289,18 +1354,18 @@ body.dark code {
     text-align: left;
     align-items: center;
   }
-  body.dark .line-0-0-20:hover {
+  body.dark .line-0-0-21:hover {
     background: #323232;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .line-0-0-20:hover {
+  body:not(.dark-mode-animate) .line-0-0-21:hover {
     background: #323232;
   }
 }
-  body.dark-mode-animate .line-0-0-20:hover {
+  body.dark-mode-animate .line-0-0-21:hover {
     transition: background .3s;
   }
-  .watermark-0-0-21 {
+  .watermark-0-0-22 {
     color: #424242;
     cursor: pointer;
     display: inline-block;
@@ -1309,37 +1374,37 @@ body.dark code {
     transition: opacity .15s;
     text-decoration: none !important;
   }
-  body.dark-mode-animate .watermark-0-0-21 {
+  body.dark-mode-animate .watermark-0-0-22 {
     transition: opacity .15s, color .3s;
   }
-  .watermark-0-0-21:hover {
+  .watermark-0-0-22:hover {
     opacity: 1;
     text-decoration: none;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .watermark-0-0-21 {
+  body:not(.dark-mode-animate) .watermark-0-0-22 {
     color: #eeeeee;
   }
 }
-  body.dark .watermark-0-0-21 {
+  body.dark .watermark-0-0-22 {
     color: #eeeeee;
   }
-  .watermark-0-0-21 svg {
+  .watermark-0-0-22 svg {
     width: 2.8rem;
     display: block;
     margin-top: .25rem;
   }
-  .watermark-0-0-21 svg g {
+  .watermark-0-0-22 svg g {
     fill: #424242;
   }
-  body.dark-mode-animate .watermark-0-0-21 svg g {
+  body.dark-mode-animate .watermark-0-0-22 svg g {
     transition: fill .3s;
   }
-  body.dark .watermark-0-0-21 svg g {
+  body.dark .watermark-0-0-22 svg g {
     fill: #eeeeee;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .watermark-0-0-21 svg g {
+  body:not(.dark-mode-animate) .watermark-0-0-22 svg g {
     fill: #eeeeee;
   }
 }
