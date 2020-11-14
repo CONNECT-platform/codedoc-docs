@@ -182,13 +182,18 @@ export const config = /*#__PURE__*/configuration({
 
 ## Vercel Deployment
 
-I you are deploying on [Vercel](https://vercel.com) by default the routing is broke.
-To fix that you can simply add `vercel.json` in the root of your project to fix that.
+I you are deploying on [Vercel](https://vercel.com), the default routing would not work out of the box.
+To fix that, you need to configure Vercel accordingly (in `vercel.json` at the root of your project):
 
-```json
+```json | vercel.json
 {
   "cleanUrls": true
 }
 ```
+
+> :Buttons
+> > :Button label=Learn More, url=https://vercel.com/docs/configuration#project/clean-urls
+
+<br>
 
 > :ToCPrevNext
