@@ -133,6 +133,10 @@ export interface CodeTheme {
   errorUnderline: string;               // --> CSS color string, color of wavy underline for "error" parts
   warningUnderline: string;             // --> CSS color string, color of wavy underline for "warning" parts
 
+  terminalPrefix: string;               // --> CSS color string, color of terminal prefix
+  terminalOutput: string;               // --> CSS color string, color of terminal output
+  terminalOutputBackground: string;     // --> CSS color string, background for terminal output
+
   keyword: string;                      // --> CSS color string, color of keywords, e.g. `import`, `return`, etc.
   boolean: string;                      // --> CSS color string, color of boolean values
   number: string;                       // --> CSS color string, color of numeric values

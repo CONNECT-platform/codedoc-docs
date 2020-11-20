@@ -213,6 +213,58 @@ As a result, codedoc comes with a host of features on code snippets to enhance l
 
 ---
 
+## Terminal Snippets
+
+> :Tabs
+> > :Tab title=Markdown
+> > ````md
+> > ```bash
+> > codedoc u
+> > > # Updating CLI ...
+> > > # Updating local codedoc installation ...
+> > >
+> > > + @codedoc/core@0.2.18
+> > > updated 1 package and audited 585 packages in 23.75s
+> > > found 0 vulnerabilities
+> > codedoc s
+> > > {greenBright #} Serving ...
+> > > {greenBright #} Fetching project configuration ...
+> > > ts-node-dev ver. 1.0.0-pre.63 (using ts-node ver. 8.10.2, typescript ver. 3.9.7)
+> > >
+> > > {greenBright #} Serving docs on {cyan http://localhost:3000}
+> > > {gray # building ........ docs/md/404.md}
+> > > {green # built:: ......... dist/404.html}
+> > > ...
+> > ```
+> > ````
+>
+> > :Tab title=How it Looks
+> > ```bash
+> > codedoc u
+> > > # Updating CLI ...
+> > > # Updating local codedoc installation ...
+> > >
+> > > + @codedoc/core@0.2.18
+> > > updated 1 package and audited 585 packages in 23.75s
+> > > found 0 vulnerabilities
+> > codedoc s
+> > > {greenBright #} Serving ...
+> > > {greenBright #} Fetching project configuration ...
+> > > ts-node-dev ver. 1.0.0-pre.63 (using ts-node ver. 8.10.2, typescript ver. 3.9.7)
+> > >
+> > > {greenBright #} Serving docs on {cyan http://localhost:3000}
+> > > {gray # building ........ docs/md/404.md}
+> > > {green #} {gray built:: .........} dist/404.html
+> > > ...
+> > ```
+
+<br>
+
+> :Buttons
+> > :Button url=/docs/code/terminal, label=Learn More
+
+---
+
 ## Top-Bar
 
 > :Tabs

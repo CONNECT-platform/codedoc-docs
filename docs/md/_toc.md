@@ -22,6 +22,7 @@
 > [Hints](/docs/code/hints)
 > [References](/docs/code/refs)
 > [Linking Code Snippets](/docs/code/links)
+> [Terminal Snippets](/docs/code/terminal)
 > [Top-Bar](/docs/code/wmbar)
 
 [Images & Assets](/docs/assets-and-images)
