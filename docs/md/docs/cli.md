@@ -27,7 +27,7 @@ and populate it with some initial setup, and also add some boiler-plate
 markdown files in `docs/` folder for you to get started.
 
 Codedoc will try to automatically guess a good title for your documentations,
-based on your project's repo and its folder name. To congiure your project
+based on your project's repo and its folder name. To configure your project
 according to your preferences, simply modify contents of `.codedoc/config.ts`:
 
 ```ts | .codedoc/config.ts
