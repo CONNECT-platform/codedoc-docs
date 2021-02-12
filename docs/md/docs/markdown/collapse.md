@@ -139,6 +139,7 @@ level of depth in your ToC:
 >
 > [Overview](/some-folder/overview)
 > > :Collapse label=Spec
+> >
 > > [Spec Overview](/some-folder/spec/overview)
 > > [Spec of This](/some-folder/spec/this)
 ```
