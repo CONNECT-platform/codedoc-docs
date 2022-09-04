@@ -9,7 +9,7 @@ HTML file for each of your _entry_ markdown files (except those who are exempt b
 and puts them in some destination folder, which is by default the root folder of your project, maintaining
 their relative paths to each other. You can reconfigure this destination folder as well.
 
-- Codedoc configruations, scripts and components. These are **ALWAYS** located in `.codedoc/` folder of your project.
+- Codedoc configurations, scripts and components. These are **ALWAYS** located in `.codedoc/` folder of your project.
 
 Assume you have the following markdown files:
 
